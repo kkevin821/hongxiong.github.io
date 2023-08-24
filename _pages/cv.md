@@ -14,7 +14,7 @@ Education
 * B.A.in Economics / B.S.in Statistics / Minor in Mathematics in University of California, Los Angeles, 2021
 * M.S. in Biostatistics, Harvard University, 2024
 
-Research experience
+Research Experience
 ======
 * 02/2023 - Now: Research Assistant
   * Laboratory for Computational Physiology, MIT Institute for Medical Engineering & Science
@@ -48,7 +48,7 @@ Research experience
     * Facilitated in the preparation of 6th China DRG Pricing and Payment Congress, and drafted invitations for potential topics.
   * Supervisor: Dr. Hui Han
 
-Work experience
+Work Experience
 ======
 * 12/2021 – 08/2022: Data Analyst
   * Novartis (China), Digital Learning Center, Shanghai
@@ -67,13 +67,6 @@ Skills
 * SAS
 * STATA
 
-Publications
-======
-  <ul>{% for post in site.publications %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-  
 Service and leadership
 ======
 * President Assistant for 2022 Summit of Asian Society of Thoracic Surgeons (ASTS)
