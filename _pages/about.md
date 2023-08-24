@@ -14,5 +14,5 @@ I worked with Dr. Andrea Bellavia and Dr. Giorgio Enrico Maria Melloni from TIMI
 
 Also, I am working with Dr. Li-wei H. Lehman from Laboratory for Computational Physiology at MIT Institute for Medical Engineering & Science to modify custom LSTM deep learning model architecture, based on G-Computation to implement counterfactual predictions under dynamic treatment, to accommodate diverse datasets and improve model performance.
 
-I recently joined Mahmood Lab at the Brigham and Women's Hospital as research trainee to facilitate the development of image-text encoder-decoder foundation model to achieve image search based on caption, under the supervision of Dr Faisal Mahmood and Dr. Max Lu. 
+I recently joined Mahmood Lab at the Brigham and Women's Hospital as research trainee to facilitate the development of image-text encoder-decoder foundation model to achieve image search based on caption, under the supervision of Dr. Faisal Mahmood and Dr. Max Lu. 
 
