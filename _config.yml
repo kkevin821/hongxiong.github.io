@@ -11,7 +11,7 @@ title                    : "Hong Xiong's Personal Webpage"
 title_separator          : "-"
 name                     : &name "Hong Xiong"
 description              : &description "Master Student in Biostatistics at Harvard University"
-url                      : https://hongxiong.github.io 
+url                      : https://kkevin821.github.io 
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "hongxiong.github.io"
 teaser                   :  # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
