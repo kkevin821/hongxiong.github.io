@@ -94,12 +94,12 @@ Healthcare often grapples with fluctuating treatment strategies. Tailoring treat
 
 Inspired by G-Net Structure from Li, R., Hu, S., Lu, M., Utsumi, Y., Chakraborty, P., Sow, D.M., Madan, P., Li, J., Ghalwash, M., Shahn, Z. & Lehman, L.. (2021). [G-Net: a Recurrent Network Approach to G-Computation for Counterfactual Prediction Under a Dynamic Treatment Regime](https://proceedings.mlr.press/v158/li21a.html). *Proceedings of Machine Learning for Health*, in *Proceedings of Machine Learning Research* 158:282-299.:
 
-
+![G-Net Visualization](/images/G-Net.png)
 
 
 We investigated two distinct values of p. Initially, we selected p equal to the count of modeled variables, leading to a method where each variable gets its own unique model, termed as the "one variable per box" method. In this strategy, each box is developed and refined independently of the others. Conversely, in our next approach, we set p at 2, which we will describe as the "two-box" architecture.
 
-We implemented the 1-box model on the CVSIM dataset, contrasting it from the MIMIC data, to demonstrate the model's versatility and broad application. Our analysis allowed us to compare the 1-box and 2-box models, specifically looking at the individual-level RMSE for counterfactual predictions.
+We implemented the one-box model on the CVSIM dataset, contrasting it from the MIMIC data, to demonstrate the model's versatility and broad application. Our analysis allowed us to compare the one-box and two-box models, specifically looking at the individual-level RMSE for counterfactual predictions. For MIMIC dataset, we make both one and two box model supportive of pre-training on larger dataset, and also delayed predictions. This results in an organized model performance comparison, 
 
 
 
