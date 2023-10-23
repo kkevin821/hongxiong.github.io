@@ -14,6 +14,8 @@ InteractionRCS R Package Development and Extensions
 
 Statistical interpretations in regression models often encounter intricate interactions with continuous covariates. The interactionRCS R package, first developed in 2022, provides a refined tool to decode such complexities using restricted cubic splines. Our ongoing research aims for a more adaptable package, capable of embracing a multitude of spline techniques and accommodating varying regression model, ensuring the package's adaptability to any knot configuration. This initiative is part of a broader exploration at the TIMI Study Group, Harvard Medical School, intersecting the domains of applied clinical research and advanced statistical methodologies.
 
+GitHub Repository: [https://github.com/gmelloni/interactionRCS]
+
 ### Example 1
 
 The first example is based on a study on drug relapse among 575 patients enrolled in a clinical trial of residential treatment for drug abuse. The main exposure of interest is the binary indicator of assigned treatment (0/1) and a treatment*age interaction is specified.
@@ -31,7 +33,7 @@ HR_rcs_delta <- intEST( var2values = c(20:50)
 plotINT(HR_rcs_delta , xlab = "Age")
 ```
 
-![Package Visualization](/images/InteractionRCS_Example_knot_3)
+![Package Visualization](/images/InteractionRCS_Example_knot_3.png)
 
 Statistical interpretations in regression models often encounter intricate interactions with continuous covariates. The interactionRCS R package, first developed in 2022, provides a refined tool to decode such complexities using restricted cubic splines. Our ongoing research aims for a more adaptable package, capable of embracing a multitude of spline techniques and accommodating varying regression model, ensuring the package's adaptability to any knot configuration. This initiative is part of a broader exploration at the TIMI Study Group, Harvard Medical School, intersecting the domains of applied clinical research and advanced statistical methodologies.
 
