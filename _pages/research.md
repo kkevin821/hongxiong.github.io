@@ -32,7 +32,10 @@ HR_rcs_delta <- intEST( var2values = c(20:50)
 
 plotINT(HR_rcs_delta , xlab = "Age")
 ```
-![Package Visualization](/images/InteractionRCS_Example_knot_3.png)
+<br>
+<br>
+
+![Package Visualization](/images/InteractionRCS_Example_knot_3_1.png)
 
 
 
