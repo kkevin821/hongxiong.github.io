@@ -22,7 +22,7 @@ The first example is based on a study on drug relapse among 575 patients enrolle
 
 The following code provides an estimate of the treatment HR at different ages, when age is modeled with restricted cubic splines. The model is further adjusted for tumor site, race, and previous use of IV drug. It is recommended to check the distribution of $Z$ (here, age) to define a realistic range of `var2values`. Finally, the code is replicated by using the delta method or bootstrap for obtaining confidence intervals. Note that when `ci.method = "bootstrap"` is specified, additional options can be specified.
 
-```{r , warning=FALSE, message=FALSE}
+```r
 
 myformula <- Surv(time, censor) ~ treat*rcs(age, 3) + site + nonwhite + ivdrug
 model_rcs <- cph(myformula , data = umaru , x = TRUE , y=TRUE)
@@ -32,6 +32,7 @@ HR_rcs_delta <- intEST( var2values = c(20:50)
 
 plotINT(HR_rcs_delta , xlab = "Age")
 ```
+
 <br>
 <br>
 
@@ -49,7 +50,7 @@ The initial version of the package was designed to support a maximum of 3 knots 
 
 The second example is based on the same data, but extended to support 4 knots for age modeled with restricted cubic splines in cph function, with CI constructed by delta method.
 
-```{r , warning=FALSE, message=FALSE}
+```r 
 
 myformula <- Surv(time, censor) ~ treat*rcs(age, 4) + site + nonwhite + ivdrug
 model <- cph(myformula , data = umaru)
@@ -66,7 +67,7 @@ plotINT2(umaru_knot4_delta , xlab = "Age",ylim=c(0,3))
 
 The third example is based on the same data, but extended to support 5 hard-coded knots for age modeled with restricted cubic splines in coxph function, with CI constructed by bootstrapping method.
 
-```{r , warning=FALSE, message=FALSE}
+```r
 
 myformula <- Surv(time, censor) ~ treat*rcs(age, c(23, 28, 32, 36, 43)) + site + nonwhite + ivdrug
 model <- coxph(myformula , data = umaru)
