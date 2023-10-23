@@ -40,7 +40,7 @@ The initial version of the package was designed to support a maximum of 3 knots 
 
 ### Example 2 from Extended Package Version: 
 
-The second example is based on the same data, but extended to support 4 knots (and more) for age modeled with restricted cubic splines.
+The second example is based on the same data, but extended to support 4 knots (and more) for age modeled with restricted cubic splines in cph function, with CI constructed by delta method.
 
 ```{r , warning=FALSE, message=FALSE}
 
@@ -53,9 +53,29 @@ umaru_knot4_delta <- rcsHR( var2values = 20:56
 
 plotINT2(umaru_knot4_delta , xlab = "Age",ylim=c(0,3))
 ```
-![Package Visualization](/images/InteractionRCS_Example_knot_4_2.png)
+![Package Visualization](/images/InteractionRCS_Example_knot_4_3.png)
 
-### Please refer to GitHub Repository [https://github.com/gmelloni/interactionRCS] for more detailed updates. 
+### Example 3 from Extended Package Version: 
+
+The third example is based on the same data, but extended to support 5 hard-coded knots for age modeled with restricted cubic splines in coxph function, with CI constructed by bootstrapping method.
+
+```{r , warning=FALSE, message=FALSE}
+
+myformula <- Surv(time, censor) ~ treat*rcs(age, c(23, 28, 32, 36, 43)) + site + nonwhite + ivdrug
+model <- coxph(myformula , data = umaru)
+
+umaru_coxph_hc_knot5_boot <- rcsHR( var2values = 20:56
+       , model = model , data = umaru , var1 ="treat", var2="age"
+        , ci=TRUE , conf = 0.95 , ci.method = "bootstrap")
+
+plotINT2(umaru_coxph_hc_knot5_boot , xlab = "Age",ylim=c(0,3))
+```
+![Package Visualization](/images/InteractionRCS_Example_knot_4_3.png)
+
+
+
+
+
 
 
 Outcome Prediction under Dynamic and Time-Varying Treatment Regimes
