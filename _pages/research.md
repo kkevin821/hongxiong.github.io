@@ -35,7 +35,7 @@ plotINT(HR_rcs_delta , xlab = "Age")
 <br>
 <br>
 
-![Package Visualization](/images/InteractionRCS_Example_knot_3_2.png)
+![Package Visualization](/images/InteractionRCS_Example_knot_3_3.png)
 
 
 
