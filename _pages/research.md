@@ -34,13 +34,13 @@ plotINT(HR_rcs_delta , xlab = "Age")
 ```
 ![Package Visualization](/images/InteractionRCS_Example_knot_3.png)
 
-<br>
+
 
 ### Extension 
 
 The initial version of the package was designed to support a maximum of 3 knots for the cubic spline term. Building on equations from Chapter 2-23 of Harrell’s book, we have now enhanced the package to accommodate more than 3 knots in the cubic spline term. This enhancement is compatible with all three primary function types (linear, logistic, Cox). Additionally, in scenarios with more than 3 knots, the package now offers support for both delta and bootstrapping techniques for CI computation and allows users to specify hard-coded knot positions.
 
-<br>
+
 
 ### Example 2 from Extended Package Version: 
 
