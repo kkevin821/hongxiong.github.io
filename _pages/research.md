@@ -16,7 +16,7 @@ Statistical interpretations in regression models often encounter intricate inter
 
 GitHub Repository: [https://github.com/gmelloni/interactionRCS]
 
-### Example 1: 
+### Example 1 from initial package version: 
 
 The first example is based on a study on drug relapse among 575 patients enrolled in a clinical trial of residential treatment for drug abuse. The main exposure of interest is the binary indicator of assigned treatment (0/1) and a treatment*age interaction is specified.
 
@@ -35,9 +35,13 @@ plotINT(HR_rcs_delta , xlab = "Age")
 
 ![Package Visualization](/images/InteractionRCS_Example_knot_3.png)
 
-### Example 2: 
+### Extension 
 
-The second example is based on the same data, but extended to support 4 knots for age modeled with restricted cubic splines.
+The initial version of the package was designed to support a maximum of 3 knots for the cubic spline term. Building on equations from Chapter 2-23 of Harrell’s book, we have now enhanced the package to accommodate more than 3 knots in the cubic spline term. This enhancement is compatible with all three primary function types (linear, logistic, Cox). Additionally, in scenarios with more than 3 knots, the package now offers support for both delta and bootstrapping techniques for CI computation and allows users to specify hard-coded knot positions.
+
+### Example 2 from extended package version: 
+
+The second example is based on the same data, but extended to support 4 knots (and more) for age modeled with restricted cubic splines.
 
 ```{r , warning=FALSE, message=FALSE}
 
@@ -50,7 +54,7 @@ umaru_knot4_delta <- rcsHR( var2values = 20:56
 
 plotINT2(umaru_knot4_delta , xlab = "Age",ylim=c(0,3))
 ```
-
+![Package Visualization](/images/InteractionRCS_Example_knot_4.png)
 
 
 
