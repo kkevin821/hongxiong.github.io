@@ -70,10 +70,8 @@ umaru_coxph_hc_knot5_boot <- rcsHR( var2values = 20:56
 
 plotINT2(umaru_coxph_hc_knot5_boot , xlab = "Age",ylim=c(0,3))
 ```
-
-
-
-
+<br>
+<br>
 ![Package Visualization](/images/InteractionRCS_Example_knot_5.png)
 
 
