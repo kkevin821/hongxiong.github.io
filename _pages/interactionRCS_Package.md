@@ -1,6 +1,6 @@
 ---
 layout: archive
-title: "interactionRCS Package"
+title: "interactionRCS R Package Development and Extensions"
 permalink: /interactionRCS_Package/
 author_profile: true
 redirect_from:
@@ -8,13 +8,18 @@ redirect_from:
 ---
 
 {% include base_path %}
+## Research Initiative
 
-InteractionRCS R Package Development and Extensions
-======
+Statistical interpretations in regression models often encounter intricate interactions with continuous covariates when modeled by restricted cubic splines. The interactionRCS R package, first developed in 2022, provides a refined tool to decode such complexities and facilitate interpretation of model results. Our ongoing research aims for a more adaptable package, capable of embracing a multitude of spline techniques and accommodating varying regression model, ensuring the package's adaptability to any knot configuration. This initiative is part of a broader exploration at the TIMI Study Group, Harvard Medical School, intersecting the domains of applied clinical research and advanced statistical methodologies.
 
-Statistical interpretations in regression models often encounter intricate interactions with continuous covariates. The interactionRCS R package, first developed in 2022, provides a refined tool to decode such complexities using restricted cubic splines. Our ongoing research aims for a more adaptable package, capable of embracing a multitude of spline techniques and accommodating varying regression model, ensuring the package's adaptability to any knot configuration. This initiative is part of a broader exploration at the TIMI Study Group, Harvard Medical School, intersecting the domains of applied clinical research and advanced statistical methodologies.
+## Research Output
 
+CRAN Package: [InteractionRCS](https://cran.r-project.org/web/packages/interactionRCS/index.html)
 GitHub Repository: [InteractionRCS](https://github.com/gmelloni/interactionRCS)
+
+## Research Procedure
+
+
 
 ### Example 1 from Initial Package Version: 
 
