@@ -35,7 +35,11 @@ GitHub Repository: [InteractionRCS](https://github.com/gmelloni/interactionRCS)
 
 As demonstrated by [vignette](https://raw.githack.com/gmelloni/interactionRCS/main/inst/extdata/vignette.html) here, based on Harrell’s book (chapter 2-23), we derived equations for generic Cox model with more than 3 knots. 
 
-![Math Visualization](/images/InteractionRCS_Math.png)
+<img src="/images/InteractionRCS_Math.png" width="500" height="300">
+
+Then, the Cox model results where interaction with continuous covariates modeled by restricted cubic splines can be derived as following.
+
+![Math Visualization 2](/images/InteractionRCS_interaction.png)
 
 
 
