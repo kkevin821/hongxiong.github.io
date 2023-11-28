@@ -33,9 +33,11 @@ GitHub Repository: [InteractionRCS](https://github.com/gmelloni/interactionRCS)
 
 ### Mathematical Derivation
 
-As demonstrated by [vignette](https://raw.githack.com/gmelloni/interactionRCS/main/inst/extdata/vignette.html) here, based on Harrell’s book (chapter 2-23), we derived equations for more than 3 knots. 
+As demonstrated by [vignette](https://raw.githack.com/gmelloni/interactionRCS/main/inst/extdata/vignette.html) here, based on Harrell’s book (chapter 2-23), we derived equations for generic Cox model with more than 3 knots. 
 
-![Math Visualization](/images/InteractionRCS_Example_knot_5.png)
+![Math Visualization](/images/InteractionRCS_Math.png)
+
+
 
 
 
