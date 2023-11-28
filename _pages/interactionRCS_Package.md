@@ -10,14 +10,33 @@ redirect_from:
 {% include base_path %}
 ## Research Initiative
 
-Statistical interpretations in regression models often encounter intricate interactions with continuous covariates when modeled by restricted cubic splines. The interactionRCS R package, first developed in 2022, provides a refined tool to decode such complexities and facilitate interpretation of model results. Our ongoing research aims for a more adaptable package, capable of embracing a multitude of spline techniques and accommodating varying regression model, ensuring the package's adaptability to any knot configuration. This initiative is part of a broader exploration at the TIMI Study Group, Harvard Medical School, intersecting the domains of applied clinical research and advanced statistical methodologies.
+Statistical interpretations in regression models often encounter intricate interactions with continuous covariates when modeled by restricted cubic splines. The interactionRCS R package, first developed in 2022, provides a refined tool to decode such complexities and facilitate interpretation of model results, with maximum number of knots to be three. Our ongoing research aims for a more adaptable package, capable of embracing a multitude of spline techniques and accommodating varying regression model, ensuring the package's adaptability to any knot configuration. This initiative is part of a broader exploration at the TIMI Study Group, Harvard Medical School, intersecting the domains of applied clinical research and advanced statistical methodologies.
 
 ## Research Output
 
+Features from initial version of interactionRCS Package:
+* Support for various regression models (linear, logistic, Cox) up to three knots 
+* Support for confidence interval calculation under delta and bootstrapping methods up to three knots
+* Support user-defined knot positions up to three knots
+
+Features added to final version of interactionRCS Package:
+* Flexibility to handle any number of knots
+* Support for various regression models (linear, logistic, Cox) when number of knots exceeds three
+* Support for confidence interval calculation under delta and bootstrapping methods when number of knots exceeds three
+* Support user-defined knot positions when number of knots exceeds three
+
 CRAN Package: [InteractionRCS](https://cran.r-project.org/web/packages/interactionRCS/index.html)
+
 GitHub Repository: [InteractionRCS](https://github.com/gmelloni/interactionRCS)
 
 ## Research Procedure
+
+### Mathematical Derivation
+
+As demonstrated by [vignette](https://raw.githack.com/gmelloni/interactionRCS/main/inst/extdata/vignette.html) here, based on Harrell’s book (chapter 2-23), we derived equations for more than 3 knots. 
+
+![Math Visualization](/images/InteractionRCS_Example_knot_5.png)
+
 
 
 
