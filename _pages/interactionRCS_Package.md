@@ -1,7 +1,7 @@
 ---
 layout: archive
-title: "Research"
-permalink: /research/
+title: "interactionRCS Package"
+permalink: /interactionRCS_Package/
 author_profile: true
 redirect_from:
   - /resume
