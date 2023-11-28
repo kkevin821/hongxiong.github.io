@@ -33,16 +33,19 @@ GitHub Repository: [InteractionRCS](https://github.com/gmelloni/interactionRCS)
 
 ### Mathematical Derivation
 
-As demonstrated by [vignette](https://raw.githack.com/gmelloni/interactionRCS/main/inst/extdata/vignette.html) here, based on Harrell’s book (chapter 2-23), we derived equations for generic Cox model with more than 3 knots. 
+As demonstrated by [vignette](https://raw.githack.com/gmelloni/interactionRCS/main/inst/extdata/vignette.html) here, interactionRCS requires results from a regression model where an interaction between a main predictor (binary or continuous) X and a continuous predictor Z has been specified. We are interested in the interaction setting where the continuous covariate Z is flexibly modeled by restricted cubic splines, with more than 3 knots.
 
-<img src="/images/InteractionRCS_Math.png" width="500" height="300">
+Based on Harrell’s book (chapter 2-23), we derived equations for generic Cox model with more than 3 knots. 
 
-Then, the Cox model results where interaction with continuous covariates modeled by restricted cubic splines can be derived as following.
+![Math Visualization](/images/InteractionRCS_Math.png)
+
+Then, the Cox model results where interaction with continuous covariate Z modeled by restricted cubic splines can be derived as following:
 
 ![Math Visualization 2](/images/InteractionRCS_interaction.png)
 
+Linear and Logistic models will follow the similar pattern.  
 
-
+### Package Development
 
 
 
