@@ -2,9 +2,15 @@
 main:
   - title: "Research"
     url: /research/    
+
+  - title: "interactionRCS Package"
+    url: /interactionRCS Package/
     
   - title: "Publications"
     url: /publications/
+
+  - title: "Teaching"
+    url: /teaching/
 
   - title: "CV"
     url: /cv/
