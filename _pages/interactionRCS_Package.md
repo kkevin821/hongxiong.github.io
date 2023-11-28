@@ -47,6 +47,13 @@ Linear and Logistic models will follow the similar pattern.
 
 ### Package Development
 
+#### Complex Mathematical Modeling
+To overcome the intricacies involved with complex mathematical expressions when the knot count exceeded three, I engineered a way to translate intricate expressions into executable R code by harnessing nested loops and iterative computations. More details could be referred from [InteractionRCS GitHub Repository](https://github.com/gmelloni/interactionRCS).
+
+#### User-defined Knot Positions
+The rcs() function in R only requires the number of knots to be specificied, and sets knots location automatically. However, we understand users might hope to define their own knots locations in order to be more aligned with their research context. I continued to add support to this customization when number of knots exceeded three. To parse user-input equations, I applied regular expression through previous self-learning in Python and translate the logic into R. Based on whether the equation for knot locations was customized or not, corresponding analyses were performed. 
+
+#### Confidence Interval Calculation under Delta and Bootstrapping Method
 
 
 ### Example 1 from Initial Package Version: 
