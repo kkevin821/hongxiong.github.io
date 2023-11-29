@@ -6,6 +6,9 @@ main:
   - title: "interactionRCS Package"
     url: /interactionRCS_Package/
     
+  - title: "Average Hazard with Survival Weights"
+    url: /Average_Hazard/
+    
   - title: "Patient Outcomes Predictions"
     url: /Outcome_Predictions/
 
