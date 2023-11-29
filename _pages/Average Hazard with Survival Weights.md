@@ -8,7 +8,7 @@ redirect_from:
 ---
 
 {% include base_path %}
-# Research Initiative
+# Research Motivation
 
 For decades, researchers have used the log-rank test/Cox’s hazard ratio (HR) test/estimation approach as the standard primary analysis for clinical trials with time-to-event outcomes. Despite its common use, the HR does not provide robust, reliable, and clinically interpretable quantitative information about the risks and benefits of a new treatment. To address this, we recently developed "average hazard" (AH) --- a new summary measure of the event time distribution (Uno and Horiguchi, Statistics in Medicine 2023), which has great potential to change the traditional analytic practice and significantly improve the interpretation of the magnitude of treatment effect on time-to-event outcomes. We aim to make AH-based methods available in various clinical research settings. 
 
