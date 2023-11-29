@@ -65,7 +65,8 @@ The culmination of our efforts was the launch of an upgraded "interactionRCS" pa
 
 # Research Presentation
 
-## Example 1 from Initial Package Version [cph function with 3 Knots under Delta Method]: 
+## Example 1 from Initial Package Version 
+## [cph function with 3 Knots under Delta Method]: 
 
 As demonstrated by [vignette](https://raw.githack.com/gmelloni/interactionRCS/main/inst/extdata/vignette.html), the first example is based on a study on drug relapse among 575 patients enrolled in a clinical trial of residential treatment for drug abuse. The main exposure of interest is the binary indicator of assigned treatment (0/1) and a treatment*age interaction is specified.
 
@@ -88,7 +89,8 @@ plotINT(HR_rcs_delta , xlab = "Age")
 ![Package Visualization](/images/InteractionRCS_Example_knot_3_3.png)
 
 
-## Example 2 from Extended Package Version [cph function with 4 Knots under Delta Method]: 
+## Example 2 from Extended Package Version 
+## [cph function with 4 Knots under Delta Method]: 
 
 The second example is based on the same data, but extended to support 4 knots for age modeled with restricted cubic splines in cph function, with CI constructed by delta method.
 
@@ -105,7 +107,8 @@ plotINT2(umaru_knot4_delta , xlab = "Age",ylim=c(0,3))
 ```
 ![Package Visualization](/images/InteractionRCS_Example_knot_4_3.png)
 
-## Example 3 from Extended Package Version [coxph function with 5 Hard-coded Knots under Bootstrapping Method]: 
+## Example 3 from Extended Package Version 
+## [coxph function with 5 Hard-coded Knots under Bootstrapping Method]: 
 
 The third example is based on the same data, but extended to support 5 hard-coded knots for age modeled with restricted cubic splines in coxph function, with CI constructed by bootstrapping method.
 
