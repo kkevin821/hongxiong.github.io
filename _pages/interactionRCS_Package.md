@@ -44,7 +44,7 @@ Then, the Cox model results where interaction with continuous covariate Z modele
 
 ![Math Visualization 2](/images/InteractionRCS_interaction.png)
 
-Linear and Logistic models will follow the similar pattern.  
+** Linear and Logistic models will follow the similar pattern. ** 
 
 ## Package Development
 
@@ -63,10 +63,11 @@ After finalizing the package, I compiled a comprehensive report to test package 
 ## Outcome and Impact
 The culmination of our efforts was the launch of an upgraded "interactionRCS" package on CRAN. This upgrade has notably refined the interpretation and presentation of regression models, particularly those that entail interactions with continuous covariates via restricted cubic splines. Our research product now significantly aids users in deciphering and applying complex statistical models.
 
+# Research Presentation
 
-### Example 1 from Initial Package Version: 
+## Example 1 from Initial Package Version [cph function with 3 Knots under Delta Method]: 
 
-The first example is based on a study on drug relapse among 575 patients enrolled in a clinical trial of residential treatment for drug abuse. The main exposure of interest is the binary indicator of assigned treatment (0/1) and a treatment*age interaction is specified.
+As demonstrated by [vignette](https://raw.githack.com/gmelloni/interactionRCS/main/inst/extdata/vignette.html), the first example is based on a study on drug relapse among 575 patients enrolled in a clinical trial of residential treatment for drug abuse. The main exposure of interest is the binary indicator of assigned treatment (0/1) and a treatment*age interaction is specified.
 
 The following code provides an estimate of the treatment HR at different ages, when age is modeled with restricted cubic splines. The model is further adjusted for tumor site, race, and previous use of IV drug. It is recommended to check the distribution of $Z$ (here, age) to define a realistic range of `var2values`. Finally, the code is replicated by using the delta method or bootstrap for obtaining confidence intervals. Note that when `ci.method = "bootstrap"` is specified, additional options can be specified.
 
@@ -87,14 +88,7 @@ plotINT(HR_rcs_delta , xlab = "Age")
 ![Package Visualization](/images/InteractionRCS_Example_knot_3_3.png)
 
 
-
-### Extension 
-
-The initial version of the package was designed to support a maximum of 3 knots for the cubic spline term. Building on equations from Chapter 2-23 of Harrell’s book, we have now enhanced the package to accommodate more than 3 knots in the cubic spline term. This enhancement is compatible with all three primary function types (linear, logistic, Cox). Additionally, in scenarios with more than 3 knots, the package now offers support for both delta and bootstrapping techniques for CI computation and allows users to specify hard-coded knot positions.
-
-
-
-### Example 2 from Extended Package Version: 
+## Example 2 from Extended Package Version [cph function with 4 Knots under Delta Method]: 
 
 The second example is based on the same data, but extended to support 4 knots for age modeled with restricted cubic splines in cph function, with CI constructed by delta method.
 
@@ -111,7 +105,7 @@ plotINT2(umaru_knot4_delta , xlab = "Age",ylim=c(0,3))
 ```
 ![Package Visualization](/images/InteractionRCS_Example_knot_4_3.png)
 
-### Example 3 from Extended Package Version: 
+## Example 3 from Extended Package Version [coxph function with 5 Hard-coded Knots under Bootstrapping Method]: 
 
 The third example is based on the same data, but extended to support 5 hard-coded knots for age modeled with restricted cubic splines in coxph function, with CI constructed by bootstrapping method.
 
@@ -131,6 +125,8 @@ plotINT2(umaru_coxph_hc_knot5_boot , xlab = "Age",ylim=c(0,3))
 
 ![Package Visualization](/images/InteractionRCS_Example_knot_5.png)
 
+
+** The package provides similar support for Linear and Logistic models. ** 
 
 
 
