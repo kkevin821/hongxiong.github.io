@@ -1,7 +1,7 @@
 ---
 layout: archive
-title: "Outcome Prediction under Dynamic and Time-Varying Treatment Regimes"
-permalink: /Outcome_Predictions/
+title: "Average Hazard with Survival Weights in Survival Analysis"
+permalink: /Average_Hazard/
 author_profile: true
 redirect_from:
   - /resume
@@ -10,38 +10,44 @@ redirect_from:
 {% include base_path %}
 # Research Initiative
 
-Healthcare often grapples with fluctuating treatment strategies. Tailoring treatment plans as dynamically as they evolve is crucial in maintaining the efficiency of patient care. Our research delves into developing deep learning techniques to realize this vision. A pivotal piece in this endeavor was established by a novel approach based on G-computation for outcome predictions under changing treatment regimes. We're currently pushing boundaries by integrating probabilistic models to further personalize these predictions, setting a new paradigm for patient care.
+For decades, researchers have used the log-rank test/Cox’s hazard ratio (HR) test/estimation approach as the standard primary analysis for clinical trials with time-to-event outcomes. Despite its common use, the HR does not provide robust, reliable, and clinically interpretable quantitative information about the risks and benefits of a new treatment. To address this, we recently developed "average hazard" (AH) --- a new summary measure of the event time distribution (Uno and Horiguchi, Statistics in Medicine 2023), which has great potential to change the traditional analytic practice and significantly improve the interpretation of the magnitude of treatment effect on time-to-event outcomes. We aim to make AH-based methods available in various clinical research settings. 
 
 # Research Context
 
-We continued our study based on G-Net framework proposed by Li, R., Hu, S., Lu, M., Utsumi, Y., Chakraborty, P., Sow, D.M., Madan, P., Li, J., Ghalwash, M., Shahn, Z. & Lehman, L.. (2021). [G-Net: a Recurrent Network Approach to G-Computation for Counterfactual Prediction Under a Dynamic Treatment Regime](https://proceedings.mlr.press/v158/li21a.html). *Proceedings of Machine Learning for Health*, in *Proceedings of Machine Learning Research* 158:282-299.:
+We continued our study based on concept of Average Hazard with Survival Weight proposed by Uno, H., & Horiguchi, M. (2023). [Ratio and difference of average hazard with survival weight: New measures to quantify survival benefit of new therapy. *Statistics in Medicine*, 42(7), 936–952.](https://doi.org/10.1002/sim.9651)
 
-![G-Net Visualization](/images/G-Net.png)
+The concept of Average Hazard with Survival Weight (AH-SW) serves as a summary metric of event time distribution and will use difference in AH-SW (DAH-SW) or ratio of AH-SW (RAH-SW) to quantify the treatment effect magnitude. The AH-SW is interpreted as a person-time incidence rate that does not depend on random censoring. It is defined as the ratio of cumulative incidence probability and restricted mean survival time (RMST), which can be estimated non-parametrically. 
 
-In our research, we apply G-computation within observational studies to achieve two main goals: (1) to learn how patient data variables, known as covariates, distribute over time based on past information, and (2) to estimate what might happen under different treatment plans using this learned information. The G-Net framework, based on G-computation mechanism, uses deep learning models to determine these covariate distributions.
-
-We've approached the analysis of covariate distributions by dividing the data into separate groups. In one method, each covariate is modeled individually — this is the 'one variable per box' approach. In another, we've grouped covariates into two categories, which we refer as the 'two variable per box' approach, to model joint distribution from continuous and categorical covariates respectively.
 
 # Research Output
 
-•	Megan Su*, Stephanie Hu*, Hong Xiong*, Amelia Hu, Elias Baedorf Kassis, Zach Shahn, Li-wei Lehman. Counterfactual Sepsis Outcome Prediction Under Dynamic and Time-Varying Treatment Regimes. In AMIA 2024 Informatics Summit. [Regular Paper] [Submitted]. (* Indicates co-first authorship)
+•	Simulation study results about performance of AH-SW under different confounding adjustment methods, like Inverse Propensity Weighted Estimator
+(IPTW), etc. We are preparing a paper to present the validity of our innovative summary metric in survival analysis.  
 
-• Ongoing paper about Transformer and GPT Architecture in Outcome Prediction under Dynamic and Time-Varying Treatment Regimes
+• Analytical variance of RAH-SW and DAH-SW adjusted by Inverse Propensity Weighted Estimators (IPTW) and Augmented Inverse Propensity Weighted Estimator (AIPTW). 
 
 
 # Research Contribution
 
-## Generalizability of "One Variable Per Box" Long Short-Term Memory (LSTM) framework from MIMIC dataset to CVSim Dataset
+## Simulation Study about Performance of AH-SW under Different Confounding Adjustment Methods
 
-Leveraging my understanding of deep learning and Python programming skills, I adapted a sequential LSTM framework, known as "one variable per box" LSTM in our research context, based on G-Net framework, for use with the CVSim dataset, thereby achieving counterfactual predictions and demonstrating the model's generalizability. Originally designed for the MIMIC database, the biggest challenge in adapting the model to the CVSim dataset was the test dataset difference. While the model training utilized a one-step ahead prediction approach on both datsets, the test dataset for MIMIC only provided a single timestamp, requiring prediction across all time points for patients. For the CVSim dataset expansion I was tasked with, the downstream task evolved to predict a later segment of multi-dimensional data based on a history of timestamps.
+### Cluster Computing
 
-This change necessitated a complete overhaul of the original model's data preprocessing and Monte Carlo simulation structure, requiring extensive rewriting and iterative testing. Initially, I could not achieve the desired prediction curves, but after a deep dive into the LSTM structure and overall model architecture, I pinpointed two key issues. The first was the inconsistency in data features and statistical distributions between the two datasets, which required informing the model of the corresponding historical timeline length during data preprocessing. The second issue was that the original model on the MIMIC data analyzed only the most recent time points, leading to an oversight of the complete historical timeline in the CVSim adaptation and resulting biases. By further dissecting and reworking the model, I ensured that each prediction updated the hidden state with both historical data and predicted values, thus considering the full past timeline. Following these improvements, we successfully applied the sequential LSTM framework from the MIMIC database to the CVSim dataset, validating the model's generalizability and practical application value.
+Due to the large computational workload, I needed to perform distributed computing using parallel jobs on a cluster. This required a proficient understanding of data transfer, code integration on the cluster, and writing batch scripts. However, I had not previously worked with clusters. Immediately, I took the initiative to self-learn official documents online, supplemented my understanding of the Kraken platform, and continuously debugged batch scripts based on system logs. This allowed me to utilize the cluster proficiently within two days. 
 
+### Data Generating Function Modification
 
-## Applications of Natural Language Processing (NLP) Techniques in Time-series Counterfactual Predictions on Patient's Outcomes
+After successfully obtaining experimental results via cluster computing, my professor and I noticed that the Confidence Interval Coverage based on bootstrapping did not meet the expected 95% level. We revisited the data-generating function's underlying mathematical derivations for corrections. I realized that we had overlooked the inherent probabilistic correlations among variables. Furthermore, I assisted in identifying that the variables generated using a standard normal distribution, when adjusted with the Inverse Propensity Weighted Estimator (IPTW) method, could lead to a lack of overlap in the tail area of propensity score distributions between the treatment and non-treatment groups. This discrepancy could result in disproportionately large weights for certain subjects within the model. Consequently, I, together with my professor, explored and implemented data generation through beta distribution to refine the experimental scenarios. 
 
-Furthering the previous work, I adapted a sequential Transformer framework, known as "two variable per box" Transformer in our research context for the CVSim dataset, achieving counterfactual predictions with a lower individual-level Root Means Square Error (RMSE) than the sequential LSTM framework, known as "two variable per box" LSTM in our research context. This highlighted the cross-disciplinary application of natural language processing models in time-series analysis, a significant aspect of my work. The ability to broadly apply models across different databases and maintain high accuracy in counterfactual predictions is vital for transforming medical practice and supporting physicians in offering optimal treatment strategies to improve patient survival rates.
+### Strategic Simulations
 
+While working with simulations adjusted by the Augmented Inverse Propensity Weighted Estimator (AIPTW) method, I encountered errors due to matrix calculation issues in some bootstrapped samples. This problem was more severe on the cluster because it involved C++ code, which is a lower-level error that is difficult to handle directly in R code. After repeated experiments, I found that it only occurred in a very small number of bootstrapping cases and was likely due to the instability of samples. However, it would cause the entire job loop to be interrupted on the cluster, severely affecting our ability to obtain enough iterations. Since our function was based on a pre-writing package and the time cost of debugging the underlying code, I proposed to reduce the number of iterations per job and increase the number of jobs as much as possible, which would minimize the impact of crashes caused by the error and ensure that we obtain enough iterations. This adjustment proved successful and ensured the continuity and robustness of our simulation experiments.
+
+## Analytical Variance of RAH-SW and DAH-SW adjusted by IPTW and AIPTW
+
+Based on theorems proposed by Wei Guanghui (2008) [Semiparametric methods for estimating cumulative treatment effects in the presence of non-proportional hazards and dependent censoring](https://www.semanticscholar.org/paper/Semiparametric-methods-for-estimating-cumulative-in-Wei/14e91a87507e83d47f33cd38ea518d7c63137b26) to derive analytical varaince upon ratio of cumulative hazards and difference in RMST, we followed the mathematical logic to derive analytical variance of RAH-SW and DAH-SW under IPTW. 
+
+Based on work by Zhang, M., & Schaubel, D. E. (2012) [Contrasting treatment-specific survival using double-robust estimators. Statistics in medicine, 31(30), 4255–4268.](https://doi.org/10.1002/sim.5511) about asymptotic distributions for Average Causal Effect (ACE) with respect to RMST, we followed the logic to derive analytical variance of RAH-SW and DAH-SW under AIPTW. 
 
 # Research Presentation
 
