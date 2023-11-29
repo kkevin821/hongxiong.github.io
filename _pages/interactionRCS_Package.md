@@ -62,9 +62,6 @@ The confidence interval calculation under delta and bootstrapping method becomes
 ### Performance Testing
 After finalizing the package, I compiled a comprehensive report to test package performance under various regression model types (linear, logistic, Cox), number of knots (from three to six), type of knot configuration (hard-coded or not), different datasets (umaru,etc), under both delta and bootstrapping methods. The validity of our package was confirmed. 
 
-## Outcome and Impact
-The culmination of our efforts was the launch of an upgraded "interactionRCS" package on CRAN. This upgrade has notably refined the interpretation and presentation of regression models, particularly those that entail interactions with continuous covariates via restricted cubic splines. Our research product now significantly aids users in deciphering and applying complex statistical models.
-
 # Research Presentation
 
 ## Example 1 from Initial Package Version 
@@ -132,5 +129,9 @@ plotINT2(umaru_coxph_hc_knot5_boot , xlab = "Age",ylim=c(0,3))
 
 
 **The package provides similar support for linear and logistic models.** 
+
+# Research Impact
+
+The culmination of our efforts was the launch of an upgraded "interactionRCS" package on CRAN. This upgrade has notably refined the interpretation and presentation of regression models, particularly those that entail interactions with continuous covariates via restricted cubic splines. Our research product now significantly aids users in deciphering and applying complex statistical models.
 
 **Please visit our CRAN Package [InteractionRCS](https://cran.r-project.org/web/packages/interactionRCS/index.html) here. We hope our package will contribute meaningfully to your research and look forward to your feedback.**
