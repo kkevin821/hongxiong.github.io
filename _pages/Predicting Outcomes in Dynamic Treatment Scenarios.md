@@ -24,7 +24,8 @@ We've approached the analysis of covariate distributions by dividing the data in
 
 # Research Output
 
-•	Megan Su*, Stephanie Hu*, Hong Xiong*, Amelia Hu, Elias Baedorf Kassis, Zach Shahn, Li-wei Lehman. Counterfactual Sepsis Outcome Prediction Under Dynamic and Time-Varying Treatment Regimes. In AMIA 2024 Informatics Summit. [Regular Paper] [Submitted]. (* Indicates co-first authorship)
+•	Megan Su*, Stephanie Hu*, Hong Xiong*, Amelia Hu, Elias Baedorf Kassis, Zach Shahn, Li-wei Lehman. *Counterfactual Sepsis Outcome Prediction Under Dynamic and Time-Varying Treatment Regimes*. In AMIA 2024 Informatics Summit. [Regular Paper] [Submitted].                                           
+       (* Indicates co-first authorship)
 
 • Ongoing paper about Transformer and GPT Architecture in Outcome Prediction under Dynamic and Time-Varying Treatment Regimes
 
