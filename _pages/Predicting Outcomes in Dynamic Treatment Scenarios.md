@@ -16,7 +16,7 @@ Inspired by G-Net Structure from Li, R., Hu, S., Lu, M., Utsumi, Y., Chakraborty
 
 ![G-Net Visualization](/images/G-Net.png)
 
-We have already developed sequential deep learning approaches to estimate expected patient trajectories and treatment outcomes under dynamic and time-varying treatment strategies. There are mainly two types 
+We have already developed sequential deep learning approaches to estimate expected patient trajectories and treatment outcomes under dynamic and time-varying treatment strategies. There are mainly two types of models. The first one is referred 
 
 # Research Output
 
