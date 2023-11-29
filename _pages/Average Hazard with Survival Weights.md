@@ -14,7 +14,7 @@ For decades, researchers have used the log-rank test/Cox’s hazard ratio (HR) t
 
 # Research Context
 
-We continued our study based on concept of Average Hazard with Survival Weight proposed by Uno, H., & Horiguchi, M. (2023) regarding [Ratio and difference of average hazard with survival weight: New measures to quantify survival benefit of new therapy. *Statistics in Medicine*, 42(7), 936–952.](https://doi.org/10.1002/sim.9651)
+We continued our study based on concept of Average Hazard with Survival Weight proposed by Uno, H., & Horiguchi, M. (2023) regarding [Ratio and difference of average hazard with survival weight: New measures to quantify survival benefit of new therapy](https://doi.org/10.1002/sim.9651)
 
 The concept of Average Hazard with Survival Weight (AH-SW) serves as a summary metric of event time distribution and will use difference in AH-SW (DAH-SW) or ratio of AH-SW (RAH-SW) to quantify the treatment effect magnitude. The AH-SW is interpreted as a person-time incidence rate that does not depend on random censoring. It is defined as the ratio of cumulative incidence probability and restricted mean survival time (RMST), which can be estimated non-parametrically. 
 
@@ -47,7 +47,7 @@ While working with simulations adjusted by the Augmented Inverse Propensity Weig
 
 Based on theorems proposed by Wei Guanghui (2008) regarding [Semiparametric methods for estimating cumulative treatment effects in the presence of non-proportional hazards and dependent censoring](https://www.semanticscholar.org/paper/Semiparametric-methods-for-estimating-cumulative-in-Wei/14e91a87507e83d47f33cd38ea518d7c63137b26) to derive analytical varaince upon ratio of cumulative hazards and difference in RMST, we followed the mathematical logic to derive analytical variance of RAH-SW and DAH-SW under IPTW. 
 
-Based on work by Zhang, M., & Schaubel, D. E. (2012) regarding [Contrasting treatment-specific survival using double-robust estimators. Statistics in medicine, 31(30), 4255–4268.](https://doi.org/10.1002/sim.5511) about asymptotic distributions for Average Causal Effect (ACE) with respect to RMST, we followed the logic to derive analytical variance of RAH-SW and DAH-SW under AIPTW. 
+Based on work by Zhang, M., & Schaubel, D. E. (2012) regarding [Contrasting treatment-specific survival using double-robust estimators](https://doi.org/10.1002/sim.5511) about asymptotic distributions for Average Causal Effect (ACE) with respect to RMST, we followed the logic to derive analytical variance of RAH-SW and DAH-SW under AIPTW. 
 
 # Research Presentation
 
