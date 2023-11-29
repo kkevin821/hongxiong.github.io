@@ -128,7 +128,7 @@ plotINT2(umaru_coxph_hc_knot5_boot , xlab = "Age",ylim=c(0,3))
 
 **The package provides similar support for linear and logistic models.** 
 
-
+**Please visit our CRAN Package [InteractionRCS](https://cran.r-project.org/web/packages/interactionRCS/index.html) here. We hope our package will contribute meaningfully to your research and look forward to your feedback.**
 
 
 
