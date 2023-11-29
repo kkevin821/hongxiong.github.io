@@ -10,11 +10,15 @@ redirect_from:
 {% include base_path %}
 # Research Initiative
 
-Healthcare often grapples with fluctuating treatment strategies. Tailoring treatment plans as dynamically as they evolve is crucial in maintaining the efficiency of patient care. Our research delves into developing deep learning techniques to realize this vision. A pivotal piece in this endeavor was established by a novel approach based on G-computation for outcome predictions under changing treatment regimes. We're currently pushing boundaries by integrating probabilistic models to further personalize these predictions, setting a new paradigm for patient care.
+
+The motivation for developing a search model that evaluates the similarity of WSI patches stems from the pressing need to enhance the precision and efficiency of histopathological assessments in cancer research and diagnostics. Lung adenocarcinoma, being one of the most common and deadly forms of lung cancer, presents vast histological heterogeneity, making the identification of prognostic and diagnostic markers a complex task.
+
+The ability to quickly and accurately retrieve histological patterns from a vast database like TCGA based on specific textual descriptions can significantly streamline the workflow of pathologists and researchers. This model would not only expedite the review of relevant cases, potentially improving the speed and accuracy of diagnoses but also facilitate a deeper understanding of the disease by correlating specific histopathological features with clinical outcomes.
 
 # Research Context
 
-We continued our study based on G-Net framework proposed by Li, R., Hu, S., Lu, M., Utsumi, Y., Chakraborty, P., Sow, D.M., Madan, P., Li, J., Ghalwash, M., Shahn, Z. & Lehman, L.. (2021). [G-Net: a Recurrent Network Approach to G-Computation for Counterfactual Prediction Under a Dynamic Treatment Regime](https://proceedings.mlr.press/v158/li21a.html). *Proceedings of Machine Learning for Health*, in *Proceedings of Machine Learning Research* 158:282-299.:
+We continued our study based on Contrastive Captioners (CoCa) architecture proposed by Yu, J., Wang, Z., Vasudevan, V., Yeung, L., Seyedhosseini, M., & Wu, Y. (2022) regarding [CoCa: Contrastive Captioners are Image-Text Foundation Models](https://arxiv.org/abs/2205.01917):
+
 
 ![G-Net Visualization](/images/G-Net.png)
 
