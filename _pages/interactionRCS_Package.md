@@ -30,7 +30,7 @@ CRAN Package: [InteractionRCS](https://cran.r-project.org/web/packages/interacti
 
 GitHub Repository: [InteractionRCS](https://github.com/gmelloni/interactionRCS)
 
-# Research Procedure
+# Research Context
 
 ## Mathematical Derivation
 
@@ -45,6 +45,8 @@ Then, the Cox model results where interaction with continuous covariate Z modele
 ![Math Visualization 2](/images/InteractionRCS_interaction.png)
 
 **Linear and logistic models will follow the similar pattern.** 
+
+# Research Contribution
 
 ## Package Development
 
