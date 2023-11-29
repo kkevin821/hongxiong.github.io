@@ -1,6 +1,6 @@
 # main links links
 main:
-  - title: "Research"
+  - title: "Research Overview"
     url: /research/    
 
   - title: "interactionRCS Package"
@@ -11,6 +11,9 @@ main:
     
   - title: "Patient Outcomes Predictions"
     url: /Outcome_Predictions/
+
+  - title: "Multimodal Search Model"
+    url: /Search_Model/
 
   - title: "Publications"
     url: /publications/
