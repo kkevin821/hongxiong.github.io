@@ -1,7 +1,7 @@
 ---
 layout: archive
-title: "Outcome Prediction under Dynamic and Time-Varying Treatment Regimes"
-permalink: /Outcome_Predictions/
+title: "Multimodal Search Model for Patches from Whole Slide Imaging (WSI) Based on Pathological Captions"
+permalink: /Search_Model/
 author_profile: true
 redirect_from:
   - /resume
