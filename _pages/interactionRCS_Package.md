@@ -8,11 +8,11 @@ redirect_from:
 ---
 
 {% include base_path %}
-## Research Initiative
+# Research Initiative
 
 Statistical interpretations in regression models often encounter intricate interactions with continuous covariates when modeled by restricted cubic splines. The interactionRCS R package, first developed in 2022, provides a refined tool to decode such complexities and facilitate interpretation of model results, with maximum number of knots to be three. Our ongoing research aims for a more adaptable package, capable of embracing a multitude of spline techniques and accommodating varying regression model, ensuring the package's adaptability to any knot configuration. This initiative is part of a broader exploration at the TIMI Study Group, Harvard Medical School, intersecting the domains of applied clinical research and advanced statistical methodologies.
 
-## Research Output
+# Research Output
 
 Features from initial version of interactionRCS Package:
 * Support for various regression models (linear, logistic, Cox) up to three knots 
@@ -21,6 +21,7 @@ Features from initial version of interactionRCS Package:
 
 Features added to final version of interactionRCS Package:
 * Flexibility to handle any number of knots
+* Flexibility in the order of inputting regression formula for any number of knots
 * Support for various regression models (linear, logistic, Cox) when number of knots exceeds three
 * Support for confidence interval calculation under delta and bootstrapping methods when number of knots exceeds three
 * Support user-defined knot positions when number of knots exceeds three
@@ -29,9 +30,9 @@ CRAN Package: [InteractionRCS](https://cran.r-project.org/web/packages/interacti
 
 GitHub Repository: [InteractionRCS](https://github.com/gmelloni/interactionRCS)
 
-## Research Procedure
+# Research Procedure
 
-### Mathematical Derivation
+## Mathematical Derivation
 
 As demonstrated by [vignette](https://raw.githack.com/gmelloni/interactionRCS/main/inst/extdata/vignette.html) here, interactionRCS requires results from a regression model where an interaction between a main predictor (binary or continuous) X and a continuous predictor Z has been specified. We are interested in the interaction setting where the continuous covariate Z is flexibly modeled by restricted cubic splines, with more than 3 knots.
 
@@ -45,15 +46,22 @@ Then, the Cox model results where interaction with continuous covariate Z modele
 
 Linear and Logistic models will follow the similar pattern.  
 
-### Package Development
+## Package Development
 
-#### Complex Mathematical Modeling
+### Complex Mathematical Modeling
 To overcome the intricacies involved with complex mathematical expressions when the knot count exceeded three, I engineered a way to translate intricate expressions into executable R code by harnessing nested loops and iterative computations. More details could be referred from [InteractionRCS GitHub Repository](https://github.com/gmelloni/interactionRCS).
 
-#### User-defined Knot Positions
+### User-defined Knot Positions
 The rcs() function in R only requires the number of knots to be specificied, and sets knots location automatically. However, we understand users might hope to define their own knots locations in order to be more aligned with their research context. I continued to add support to this customization when number of knots exceeded three. To parse user-input equations, I applied regular expression through previous self-learning in Python and translate the logic into R. Based on whether the equation for knot locations was customized or not, corresponding analyses were performed. 
 
-#### Confidence Interval Calculation under Delta and Bootstrapping Method
+### Confidence Interval Calculation under Delta and Bootstrapping Method
+The confidence interval calculation under delta and bootstrapping method becomes more complicate as number of knots exceeded three, as we can see from the mathematical derivation above. I followed the logic from original package and extended the function to extract corresponding terms given an arbitrary number of knots, with global variable setting and iterative computation. 
+
+### Performance Testing
+After finalizing the package, I compiled a comprehensive report to test package performance under various regression model types (linear, logistic, Cox), number of knots (from three to six), type of knot configuration (hard-coded or not), different datasets (umaru,etc), under both delta and bootstrapping methods. The validity of our package was confirmed. 
+
+## Outcome and Impact
+The culmination of our efforts was the launch of an upgraded "interactionRCS" package on CRAN. This upgrade has notably refined the interpretation and presentation of regression models, particularly those that entail interactions with continuous covariates via restricted cubic splines. Our research product now significantly aids users in deciphering and applying complex statistical models.
 
 
 ### Example 1 from Initial Package Version: 
