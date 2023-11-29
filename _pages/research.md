@@ -23,6 +23,6 @@ Moreover, my research experience during Mahmood Lab at Harvard Medical School, a
 
 ## Deep Learning Research
 
-* For my research project about outcome prediction under dynamic and time-varying treatment regimes at Laboratory for Computational Physiology at MIT Institute for Medical Engineering & Science, under supervision of Dr. Li-wei H. Lehman, please visit [Patient Outcomes Predictios (https://kkevin821.github.io/Outcome_Predictions/) page.
+* For my research project about outcome prediction under dynamic and time-varying treatment regimes at Laboratory for Computational Physiology at MIT Institute for Medical Engineering & Science, under supervision of Dr. Li-wei H. Lehman, please visit [Patient Outcomes Predictions] (https://kkevin821.github.io/Outcome_Predictions/) page.
 
 * For my research project about multimodal search model for patches from Whole Slide Imaging (WSI) based on pathological captions at Mahmood Lab, Harvard Medical School, under supervision of Dr. Faisal Mahmood, please visit [Multimodal Search Model](https://kkevin821.github.io/Search_Model/) page.
