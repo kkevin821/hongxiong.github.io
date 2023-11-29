@@ -44,7 +44,7 @@ Then, the Cox model results where interaction with continuous covariate Z modele
 
 ![Math Visualization 2](/images/InteractionRCS_interaction.png)
 
-** Linear and Logistic models will follow the similar pattern. ** 
+**Linear and logistic models will follow the similar pattern.** 
 
 ## Package Development
 
@@ -126,7 +126,7 @@ plotINT2(umaru_coxph_hc_knot5_boot , xlab = "Age",ylim=c(0,3))
 ![Package Visualization](/images/InteractionRCS_Example_knot_5.png)
 
 
-** The package provides similar support for Linear and Logistic models. ** 
+**The package provides similar support for linear and logistic models.** 
 
 
 
