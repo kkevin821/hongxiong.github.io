@@ -31,7 +31,7 @@ We've approached the analysis of covariate distributions by dividing the data in
 
 # Research Contribution
 
-## Generalizability of "one variable per box" Long Short-Term Memory (LSTM) from MIMIC dataset to CVSim Dataset
+## Generalizability of "One Variable Per Box" Long Short-Term Memory (LSTM) framework from MIMIC dataset to CVSim Dataset
 
 Leveraging my understanding of deep learning and Python programming skills, I adapted a sequential LSTM framework, known as "one variable per box" LSTM in our research context, based on G-Net framework, for use with the CVSim dataset, thereby achieving counterfactual predictions and demonstrating the model's generalizability. Originally designed for the MIMIC database, the biggest challenge in adapting the model to the CVSim dataset was the test dataset difference. While the model training utilized a one-step ahead prediction approach on both datsets, the test dataset for MIMIC only provided a single timestamp, requiring prediction across all time points for patients. For the CVSim dataset expansion I was tasked with, the downstream task evolved to predict a later segment of multi-dimensional data based on a history of timestamps.
 
