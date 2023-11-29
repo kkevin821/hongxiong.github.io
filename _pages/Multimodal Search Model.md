@@ -12,11 +12,12 @@ redirect_from:
 
 The motivation for developing a search model that evaluates the similarity of WSI patches stems from the pressing need to enhance the precision and efficiency of histopathological assessments in cancer research and diagnostics. Lung adenocarcinoma, being one of the most common and deadly forms of lung cancer, presents vast histological heterogeneity, making the identification of prognostic and diagnostic markers a complex task.
 
-The ability to quickly and accurately retrieve histological patterns from a vast database like TCGA based on specific textual descriptions can significantly streamline the workflow of pathologists and researchers. This model would not only expedite the review of relevant cases, potentially improving the speed and accuracy of diagnoses but also facilitate a deeper understanding of the disease by correlating specific histopathological features with clinical outcomes.
+The ability to quickly and accurately retrieve histological patterns from a vast pathological database based on specific textual descriptions can significantly streamline the workflow of pathologists and researchers. This model would not only expedite the review of relevant cases, potentially improving the speed and accuracy of diagnoses but also facilitate a deeper understanding of the disease by correlating specific histopathological features with clinical outcomes.
 
 # Research Context
 
 My prior advanced coursework at Harvard's School of Engineering on computer vision and NLP, coupled with a project applying transfer learning with VGG16 to classify patient brain CT tumor types with 95% accuracy, laid the groundwork for this research. However, the complexity of the data escalated as we dealt with WSI in pathology, demanding proficient feature extraction via computer vision neural networks.
+
 We continued our study based on Contrastive Captioners (CoCa) architecture proposed by Yu, J., Wang, Z., Vasudevan, V., Yeung, L., Seyedhosseini, M., & Wu, Y. (2022) regarding [CoCa: Contrastive Captioners are Image-Text Foundation Models](https://arxiv.org/abs/2205.01917):
 
 ![CoCa Visualization](/images/Coca.png)
