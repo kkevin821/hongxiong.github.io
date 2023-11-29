@@ -14,7 +14,7 @@ Healthcare often grapples with fluctuating treatment strategies. Tailoring treat
 
 # Research Context
 
-We continued our study based on G-Net framework proposed by Li, R., Hu, S., Lu, M., Utsumi, Y., Chakraborty, P., Sow, D.M., Madan, P., Li, J., Ghalwash, M., Shahn, Z. & Lehman, L.. (2021) regarding [G-Net: a Recurrent Network Approach to G-Computation for Counterfactual Prediction Under a Dynamic Treatment Regime. *Proceedings of Machine Learning for Health*, in *Proceedings of Machine Learning Research* 158:282-299](https://proceedings.mlr.press/v158/li21a.html):
+We continued our study based on G-Net framework proposed by Li, R., Hu, S., Lu, M., Utsumi, Y., Chakraborty, P., Sow, D.M., Madan, P., Li, J., Ghalwash, M., Shahn, Z. & Lehman, L.. (2021) regarding [G-Net: a Recurrent Network Approach to G-Computation for Counterfactual Prediction Under a Dynamic Treatment Regime](https://proceedings.mlr.press/v158/li21a.html):
 
 ![G-Net Visualization](/images/G-Net.png)
 
