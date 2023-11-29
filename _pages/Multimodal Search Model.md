@@ -8,7 +8,7 @@ redirect_from:
 ---
 
 {% include base_path %}
-# Research Initiative
+# Research Motivation
 
 
 The motivation for developing a search model that evaluates the similarity of WSI patches stems from the pressing need to enhance the precision and efficiency of histopathological assessments in cancer research and diagnostics. Lung adenocarcinoma, being one of the most common and deadly forms of lung cancer, presents vast histological heterogeneity, making the identification of prognostic and diagnostic markers a complex task.
@@ -20,7 +20,7 @@ The ability to quickly and accurately retrieve histological patterns from a vast
 We continued our study based on Contrastive Captioners (CoCa) architecture proposed by Yu, J., Wang, Z., Vasudevan, V., Yeung, L., Seyedhosseini, M., & Wu, Y. (2022) regarding [CoCa: Contrastive Captioners are Image-Text Foundation Models](https://arxiv.org/abs/2205.01917):
 
 
-![G-Net Visualization](/images/G-Net.png)
+![CoCa Visualization](/images/Coca.png)
 
 In our research, we apply G-computation within observational studies to achieve two main goals: (1) to learn how patient data variables, known as covariates, distribute over time based on past information, and (2) to estimate what might happen under different treatment plans using this learned information. The G-Net framework, based on G-computation mechanism, uses deep learning models to determine these covariate distributions.
 
