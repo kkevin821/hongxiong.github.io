@@ -6,6 +6,9 @@ main:
   - title: "interactionRCS Package"
     url: /interactionRCS_Package/
     
+  - title: "Patient Outcomes Predictions"
+    url: /Outcome_Predictions/
+
   - title: "Publications"
     url: /publications/
 
