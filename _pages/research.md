@@ -17,7 +17,7 @@ Moreover, my research experience during Mahmood Lab at Harvard Medical School, a
 
 ## Statistical Modeling Research
 
-* For my research project about interactionRCS R Package development and extension at TIMI Study Group, Harvard Medical School, under supervision of Dr. Andrea Bellavia and Dr. Giorgio Enrico Maria Melloni, please visit [interactionRCS_Package](https://kkevin821.github.io/interactionRCS_Package/).
+* For my research project about interactionRCS R Package development and extension at TIMI Study Group, Harvard Medical School, under supervision of Dr. Andrea Bellavia and Dr. Giorgio Enrico Maria Melloni, please visit [interactionRCS Package](https://kkevin821.github.io/interactionRCS_Package/).
   
-* For my research project about Average Hazard with Survival Weights in survival analysis at Dana-Farber Cancer Institute, Harvard Medical School, under supervision of Dr. Hajime Uno, please visit [Average_Hazard with Survival Weights](https://kkevin821.github.io/Average_Hazard/).
+* For my research project about Average Hazard with Survival Weights in survival analysis at Dana-Farber Cancer Institute, Harvard Medical School, under supervision of Dr. Hajime Uno, please visit [Average Hazard with Survival Weights](https://kkevin821.github.io/Average_Hazard/).
 
