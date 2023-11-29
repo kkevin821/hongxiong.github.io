@@ -134,22 +134,3 @@ plotINT2(umaru_coxph_hc_knot5_boot , xlab = "Age",ylim=c(0,3))
 **The package provides similar support for linear and logistic models.** 
 
 **Please visit our CRAN Package [InteractionRCS](https://cran.r-project.org/web/packages/interactionRCS/index.html) here. We hope our package will contribute meaningfully to your research and look forward to your feedback.**
-
-
-
-
-Outcome Prediction under Dynamic and Time-Varying Treatment Regimes
-======
-Healthcare often grapples with fluctuating treatment strategies. Tailoring treatment plans as dynamically as they evolve is crucial in maintaining the efficiency of patient care. Our research delves into developing deep learning techniques to realize this vision. A pivotal piece in this endeavor was established by a novel approach based on G-computation for outcome predictions under changing treatment regimes. We're currently pushing boundaries by integrating probabilistic models to further personalize these predictions, setting a new paradigm for patient care.
-
-Inspired by G-Net Structure from Li, R., Hu, S., Lu, M., Utsumi, Y., Chakraborty, P., Sow, D.M., Madan, P., Li, J., Ghalwash, M., Shahn, Z. & Lehman, L.. (2021). [G-Net: a Recurrent Network Approach to G-Computation for Counterfactual Prediction Under a Dynamic Treatment Regime](https://proceedings.mlr.press/v158/li21a.html). *Proceedings of Machine Learning for Health*, in *Proceedings of Machine Learning Research* 158:282-299.:
-
-![G-Net Visualization](/images/G-Net.png)
-
-
-We investigated two distinct values of p. Initially, we selected p equal to the count of modeled variables, leading to a method where each variable gets its own unique model, termed as the "one variable per box" method. In this strategy, each box is developed and refined independently of the others. Conversely, in our next approach, we set p at 2, which we will describe as the "two-box" architecture.
-
-We implemented the one-box model on the CVSIM dataset, contrasting it from the MIMIC data, to demonstrate the model's versatility and broad application. Our analysis allowed us to compare the one-box and two-box models, specifically looking at the individual-level RMSE for counterfactual predictions. For MIMIC dataset, we make both one and two box model supportive of pre-training on larger dataset, and also delayed predictions. This results in an organized model performance comparison, 
-
-
-
