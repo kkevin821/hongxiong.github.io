@@ -41,15 +41,25 @@ The concept of Average Hazard with Survival Weight (AH-SW) serves as a summary m
 
 ### Cluster Computing
 
-Due to the large computational workload, I needed to perform distributed computing using parallel jobs on a cluster. This required a proficient understanding of data transfer, code integration on the cluster, and writing batch scripts. However, I had not previously worked with clusters. Immediately, I took the initiative to self-learn official documents online, supplemented my understanding of the Kraken platform, and continuously debugged batch scripts based on system logs. This allowed me to utilize the cluster proficiently within two days. 
+* Managed large computational workloads through distributed computing with parallel jobs on a cluster.
+* Gained proficiency in data transfer, code integration on the cluster, and batch script writing.
+* Self-learned the use of clusters, with a focus on the Kraken platform.
+* Debugged batch scripts using system logs, achieving cluster proficiency within two days.
 
 ### Data Generating Function Modification
 
-After successfully obtaining experimental results via cluster computing, my professor and I noticed that the Confidence Interval Coverage based on bootstrapping did not meet the expected 95% level. We revisited the data-generating function's underlying mathematical derivations for corrections. I realized that we had overlooked the inherent probabilistic correlations among variables. Furthermore, I assisted in identifying that the variables generated using a standard normal distribution, when adjusted with the Inverse Propensity Weighted Estimator (IPTW) method, could lead to a lack of overlap in the tail area of propensity score distributions between the treatment and non-treatment groups. This discrepancy could result in disproportionately large weights for certain subjects within the model. Consequently, I, together with my professor, explored and implemented data generation through beta distribution to refine the experimental scenarios. 
+* Identified Confidence Interval Coverage issues post cluster computation experiments.
+* Reexamined the data-generating function to correct mathematical derivations.
+* Addressed overlooked probabilistic correlations among variables.
+* Adjusted variable generation from standard normal to beta distribution with IPTW to mitigate overlap issues in propensity score distributions.
+* Collaborated in refining experimental scenarios to enhance data accuracy.
 
 ### Strategic Simulations
 
-While working with simulations adjusted by the Augmented Inverse Propensity Weighted Estimator (AIPTW) method, I encountered errors due to matrix calculation issues in some bootstrapped samples. This problem was more severe on the cluster because it involved C++ code, which is a lower-level error that is difficult to handle directly in R code. After repeated experiments, I found that it only occurred in a very small number of bootstrapping cases and was likely due to the instability of samples. However, it would cause the entire job loop to be interrupted on the cluster, severely affecting our ability to obtain enough iterations. Since our function was based on a pre-writing package and the time cost of debugging the underlying code, I proposed to reduce the number of iterations per job and increase the number of jobs as much as possible, which would minimize the impact of crashes caused by the error and ensure that we obtain enough iterations. This adjustment proved successful and ensured the continuity and robustness of our simulation experiments.
+* Tackled matrix calculation errors in bootstrapped samples using AIPTW method simulations.
+* Identified error occurrence in a minimal number of bootstrapping cases, likely due to sample instability.
+* Proposed and implemented a strategy to reduce iterations per job and increase the total number of jobs.
+* This approach minimized the impact of errors, ensured sufficient iterations, and maintained the continuity and robustness of simulation experiments.
 
 ## Analytical Variance of RAH-SW and DAH-SW Adjusted by IPTW and AIPTW
 
