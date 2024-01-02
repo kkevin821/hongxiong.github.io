@@ -28,7 +28,7 @@ The concept of Average Hazard with Survival Weight (AH-SW) serves as a summary m
 
 # Research Flowchart
 
-![Flowchart](/images/AH_Flowchart.png)
+![Flowchart](/images/AH_Flowchart_2.png)
 
 * We are interested in four metrics under different experimental scenarios: Group 0 Average Hazard (AH), Group 1 (AH), Difference in AH, and Difference in log(AH), which can also be interpreted as ratio of AH in log term.
 * We designed two event patterns: Whether exponential-based hazard model is correctly specified
