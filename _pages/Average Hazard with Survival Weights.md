@@ -1,6 +1,6 @@
 ---
 layout: archive
-title: "Average Hazard with Survival Weights in Survival Analysis"
+title: "Average Hazard with Survival Weight in Survival Analysis"
 permalink: /Average_Hazard/
 author_profile: true
 redirect_from:
@@ -14,7 +14,7 @@ For decades, researchers have used the log-rank test/Cox’s hazard ratio (HR) t
 
 # Research Context
 
-We continued our study based on concept of Average Hazard with Survival Weight proposed by Uno, H., & Horiguchi, M. (2023) regarding [Ratio and difference of average hazard with survival weight: New measures to quantify survival benefit of new therapy](https://doi.org/10.1002/sim.9651)
+We continued our study based on concept of Average Hazard with Survival Weight proposed by Uno, H., & Horiguchi, M. (2023) regarding [Ratio and difference of average hazard with survival weight: New measures to quantify survival benefit of new therapy](https://doi.org/10.1002/sim.9651).
 
 The concept of Average Hazard with Survival Weight (AH-SW) serves as a summary metric of event time distribution and will use difference in AH-SW (DAH-SW) or ratio of AH-SW (RAH-SW) to quantify the treatment effect magnitude. The AH-SW is interpreted as a person-time incidence rate that does not depend on random censoring. It is defined as the ratio of cumulative incidence probability and restricted mean survival time (RMST), which can be estimated non-parametrically. 
 
@@ -25,6 +25,9 @@ The concept of Average Hazard with Survival Weight (AH-SW) serves as a summary m
 (IPTW), etc. We are preparing a paper to present the validity of our innovative summary metric in survival analysis.  
 
 • Analytical variance of RAH-SW and DAH-SW adjusted by Inverse Propensity Weighted Estimators (IPTW) and Augmented Inverse Propensity Weighted Estimator (AIPTW). 
+
+# Research Flowchart
+
 
 
 # Research Contribution
