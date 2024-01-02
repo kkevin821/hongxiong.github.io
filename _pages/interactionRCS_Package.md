@@ -10,7 +10,7 @@ redirect_from:
 {% include base_path %}
 # Research Motivation
 
-Statistical interpretations in regression models often encounter intricate interactions with continuous covariates when modeled by restricted cubic splines. The interactionRCS R package, first developed in 2022, provides a refined tool to decode such complexities and facilitate interpretation of model results, with maximum number of knots to be three. Our ongoing research aims for a more adaptable package, capable of embracing a multitude of spline techniques and accommodating varying regression model, ensuring the package's adaptability to any knot configuration. This initiative is part of a broader exploration at the TIMI Study Group, Harvard Medical School, intersecting the domains of applied clinical research and advanced statistical methodologies.
+Statistical interpretations in regression models often encounter intricate interactions with continuous covariates when modeled by restricted cubic splines. The interactionRCS R package, first developed in 2022, provides a refined tool to decode such complexities and facilitate interpretation of model results, with a limitation of up to three knots. Our ongoing research aims for a more adaptable package, capable of embracing a multitude of spline techniques and accommodating varying regression model, ensuring the package's adaptability to any knot configuration. This initiative is part of a broader exploration at the TIMI Study Group, Harvard Medical School, intersecting the domains of applied clinical research and advanced statistical methodologies.
 
 # Research Output
 
