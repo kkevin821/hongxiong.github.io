@@ -13,7 +13,20 @@ redirect_from:
 
 * Foundational Expertise:
   * Solid grounding in biostatistics, machine learning, and deep learning
+  * Strong undergraduate training in statistics and mathematics
   * Committed to integrating data-driven insights with clinical applications
+
+* Research Assistantships:
+  * TIMI Study Group, Harvard Medical School
+  * Dana-Farber Cancer Institute, Harvard Medical School
+  * Mahmood Lab, Harvard Medical School
+  * Laboratory for Computational Physiology, MIT Institute for Medical Engineering & Science
+
+* Research Topics:
+  * Interpretable statistical models
+  * Survival analysis methodologies
+  * Natural Language Processing (NLP) and Computer Vision (CV) in the public health field
+  * Deep learning frameworks in the public health field
 
 
 ## Statistical Modeling Research
