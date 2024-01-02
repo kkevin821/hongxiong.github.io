@@ -12,8 +12,8 @@ redirect_from:
 ## Research Summary
 
 * Foundational Expertise:
-* * Solid grounding in biostatistics, machine learning, and deep learning
-* * Committed to integrating data-driven insights with clinical applications
+** Solid grounding in biostatistics, machine learning, and deep learning
+** Committed to integrating data-driven insights with clinical applications
 
 
 ## Statistical Modeling Research
