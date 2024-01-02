@@ -25,8 +25,8 @@ redirect_from:
 * Research Topics:
   * Interpretable statistical models
   * Survival analysis methodologies
-  * Natural Language Processing (NLP) and Computer Vision (CV) in the public health field
-  * Deep learning frameworks in the public health field
+  * Natural Language Processing and Computer Vision techniques in Whole Slide Imaging
+  * Deep learning frameworks in patient outcome prediction
 
 
 ## Statistical Modeling Research
