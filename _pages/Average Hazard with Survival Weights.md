@@ -28,7 +28,7 @@ The concept of Average Hazard with Survival Weight (AH-SW) serves as a summary m
 
 # Research Flowchart
 
-
+![Flowchart](/images/Persuas.png)
 
 # Research Contribution
 
