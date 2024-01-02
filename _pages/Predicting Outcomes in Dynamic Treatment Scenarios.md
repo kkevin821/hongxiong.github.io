@@ -24,27 +24,39 @@ We've approached the analysis of covariate distributions by dividing the data in
 
 # Research Output
 
-•	Megan Su*, Stephanie Hu*, Hong Xiong*, Amelia Hu, Elias Baedorf Kassis, Zach Shahn, Li-wei Lehman. *Counterfactual Sepsis Outcome Prediction Under Dynamic and Time-Varying Treatment Regimes*. In AMIA 2024 Informatics Summit. [Regular Paper] [Submitted].                                           
+•	Megan Su*, Stephanie Hu*, Hong Xiong*, Amelia Hu, Elias Baedorf Kassis, Zach Shahn, Li-wei Lehman. *Counterfactual Sepsis Outcome Prediction Under Dynamic and Time-Varying Treatment Regimes*. In AMIA 2024 Informatics Summit. [Regular Paper] [Accepted].                                           
                                   (* Indicates co-first authorship)
 
 • Ongoing paper about Transformer and GPT Architecture in Outcome Prediction under Dynamic and Time-Varying Treatment Regimes
-
 
 # Research Contribution
 
 ## Generalizability of "One Variable Per Box" Long Short-Term Memory (LSTM) framework from MIMIC dataset to CVSim Dataset
 
 ### Technical Challenges
-Leveraging my understanding of deep learning and Python programming skills, I adapted a sequential LSTM framework, known as "one variable per box" LSTM in our research context, based on G-Net framework, for use with the CVSim dataset, thereby achieving counterfactual predictions and demonstrating the model's generalizability. Originally designed for the MIMIC database, the biggest challenge in adapting the model to the CVSim dataset was the test dataset difference. While the model training utilized a one-step ahead prediction approach on both datsets, the test dataset for MIMIC only provided a single timestamp, requiring prediction across all time points for patients. For the CVSim dataset expansion I was tasked with, the downstream task evolved to predict a later segment of multi-dimensional data based on a history of timestamps.
+
+* Adapted a "one variable per box" LSTM framework, initially based on the G-Net framework, for the CVSim dataset.
+* Achieved counterfactual predictions and confirmed the model's generalizability.
+* Faced a significant challenge due to dataset differences between MIMIC and CVSim.
+  * Training involved one-step ahead prediction on both datasets.
+  * MIMIC's test dataset required single timestamp predictions, while CVSim required predicting a later segment of multi-dimensional data.
 
 ### Solutions 
-This change necessitated a complete overhaul of the original model's data preprocessing and Monte Carlo simulation structure, requiring extensive rewriting and iterative testing. Initially, I could not achieve the desired prediction curves, but after a deep dive into the LSTM structure and overall model architecture, I pinpointed two key issues. The first was the inconsistency in data features and statistical distributions between the two datasets, which required informing the model of the corresponding historical timeline length during data preprocessing. The second issue was that the original model on the MIMIC data analyzed only the most recent time points, leading to an oversight of the complete historical timeline in the CVSim adaptation and resulting biases. By further dissecting and reworking the model, I ensured that each prediction updated the hidden state with both historical data and predicted values, thus considering the full past timeline. Following these improvements, we successfully applied the sequential LSTM framework from the MIMIC database to the CVSim dataset, validating the model's generalizability and practical application value.
 
+* Overhauled the model's data preprocessing and Monte Carlo simulation structure.
+* Conducted extensive rewriting and iterative testing.
+* Identified two key issues through in-depth analysis of LSTM structure:
+  * Inconsistencies in data features and statistical distributions necessitated adjustments during data preprocessing.
+  * The need to update the hidden state with complete historical data to avoid bias.
+* Reworked the model to ensure full historical timeline consideration in predictions.
+* Achieved successful application of the sequential LSTM framework to the CVSim dataset.
 
 ## Applications of Natural Language Processing (NLP) Techniques in Time-Series Counterfactual Predictions on Patient's Outcomes
 
-Furthering the previous work, I adapted a sequential Transformer framework, known as "two variable per box" Transformer in our research context for the CVSim dataset, achieving counterfactual predictions with a lower individual-level Root Means Square Error (RMSE) than the sequential LSTM framework, known as "two variable per box" LSTM in our research context. This highlighted the cross-disciplinary application of natural language processing models in time-series analysis, a significant aspect of my work. The ability to broadly apply models across different databases and maintain high accuracy in counterfactual predictions is vital for transforming medical practice and supporting physicians in offering optimal treatment strategies to improve patient survival rates.
-
+* Implemented a sequential Transformer framework, termed "two variable per box" Transformer, for the CVSim dataset.
+* Attained counterfactual predictions with lower individual-level RMSE than the "two variable per box" LSTM.
+* Demonstrated the effective cross-disciplinary application of NLP techniques in time-series analysis.
+* Emphasized the importance of model adaptability across databases for enhancing medical treatment strategies and patient outcomes.
 
 # Research Presentation
 
