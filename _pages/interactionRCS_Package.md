@@ -51,16 +51,32 @@ Then, the Cox model results where interaction with continuous covariate Z modele
 ## Package Development
 
 ### Complex Mathematical Modeling
-To overcome the intricacies involved with complex mathematical expressions when the knot count exceeded three, I engineered a way to translate intricate expressions into executable R code by harnessing nested loops and iterative computations. More details could be referred from [InteractionRCS GitHub Repository](https://github.com/gmelloni/interactionRCS).
+
+* Addressed the complexities of mathematical expressions with more than three knots.
+* Developed a technique to convert complex expressions into executable R code using nested loops and iterative computations.
+* Further information is available at the [InteractionRCS GitHub Repository](https://github.com/gmelloni/interactionRCS).
 
 ### User-defined Knot Positions
-The rcs() function in R only requires the number of knots to be specificied, and sets knots location automatically. However, we understand users might hope to define their own knots locations in order to be more aligned with their research context. I continued to add support to this customization when number of knots exceeded three. To parse user-input equations, I applied regular expression through previous self-learning in Python and translate the logic into R. Based on whether the equation for knot locations was customized or not, corresponding analyses were performed. 
+
+* Enhanced the rcs() function in R to support user-specified knot positions, catering to specific research needs.
+* Implemented custom knot location functionality for when the number of knots exceeds three.
+* Utilized regular expressions, leveraging Python skills, to interpret user-input equations and implemented the logic in R.
+* Conducted analyses based on whether knot locations were user-defined or automatically set.
 
 ### Confidence Interval Calculation under Delta and Bootstrapping Method
-The confidence interval calculation under delta and bootstrapping method becomes more complicate as number of knots exceeded three, as we can see from the mathematical derivation above. I followed the logic from original package and extended the function to extract corresponding terms given an arbitrary number of knots, with global variable setting and iterative computation. 
+
+* Tackled the complexity of confidence interval calculations when the knot count surpasses three.
+* Extended the existing package's logic to accommodate an arbitrary number of knots.
+* Employed global variable settings and iterative computations to facilitate the extended functionality.
 
 ### Performance Testing
-After finalizing the package, I compiled a comprehensive report to test package performance under various regression model types (linear, logistic, Cox), number of knots (from three to six), type of knot configuration (hard-coded or not), different datasets (umaru,etc), under both delta and bootstrapping methods. The validity of our package was confirmed. 
+
+* Compiled a detailed report evaluating the package’s performance across:
+  * Different regression model types: linear, logistic, Cox.
+  * A range of knot numbers: from three to six.
+  * Various knot configurations: both preset and user-defined.
+  * Multiple datasets, such as umaru.
+* Conducted tests using both delta and bootstrapping methods to verify the package's accuracy and reliability.
 
 # Research Presentation
 
