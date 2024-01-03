@@ -15,7 +15,7 @@ redirect_from:
 Harvard T.H. Chan School of Public Health
 
 ## Supervisor
-Paul Catalano
+Dr. Paul Catalano
 
 ## Term
 2023 Fall Semester
@@ -32,7 +32,7 @@ Teaching responsibilities may include: running a lab session; holding scheduled 
 Harvard T.H. Chan School of Public Health
 
 ## Supervisor
-Santiago Romero-Brufau
+Dr. Santiago Romero-Brufau
 
 ## Term
 2024 Spring Semester
