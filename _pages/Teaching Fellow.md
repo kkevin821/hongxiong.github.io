@@ -1,6 +1,6 @@
 ---
 layout: archive
-title: "Teaching Fellow Experience"
+title: "Teaching Fellow Experiences"
 permalink: /Teaching_Fellow/
 author_profile: true
 redirect_from:
@@ -10,6 +10,9 @@ redirect_from:
 {% include base_path %}
 
 # BST 201 - Introduction to Statistical Methods
+
+## Organization
+Harvard T.H. Chan School of Public Health
 
 ## Supervisor
 Paul Catalano
@@ -24,6 +27,9 @@ Covers basic statistical techniques that are important for analyzing data arisin
 Teaching responsibilities may include: running a lab session; holding scheduled office hours; holding extra review sessions before exams; grading assignments; maintaining the course Canvas site; assisting with class logistics (e.g., guest speakers); attending class sessions; tracking student attendance and participation; responding to questions from students via email or other means; and other duties as assigned.
 
 # BST 261 - Data Science II
+
+## Organization
+Harvard T.H. Chan School of Public Health
 
 ## Supervisor
 Santiago Romero-Brufau
