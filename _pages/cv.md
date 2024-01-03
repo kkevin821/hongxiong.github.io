@@ -16,12 +16,11 @@ Education
 
 Research Experience
 ======
-* 09/2023 - Presnet: Research Assistant
+* 09/2023 - Present: Research Assistant
   * Dana-Farber Cancer Institute, Harvard Medical School, Boston, Massachusetts, United States
   * Duties included:
     * Conducted simulation experiments on cluster to evaluate the performances under different confounder adjustment methods for Average Hazard with Survival Weight (AH-SW) in survival analysis, which is an innovative summary metric with the potential to significantly improve the interpretation of the magnitude of treatment effect on time-to-event outcomes. 
-    * Derived the analytical variance of difference and ratio in AH-SW adjusted by Inverse Propensity Weighted Estimator
-(IPTW) and Augmented Inverse Propensity Weighted Estimator (AIPTW).
+    * Derived the analytical variance of difference and ratio in AH-SW adjusted by Inverse Propensity Weighted Estimator (IPTW) and Augmented Inverse Propensity Weighted Estimator (AIPTW).
   * Supervisor: Dr. Hajime Uno, Harvard University
 
 * 07/2023 - 12/2023: Research Trainee
@@ -36,7 +35,7 @@ Research Experience
   * Duties included:
     * Modified a sequential Long Short-Term Memory (LSTM) framework, aiming to estimate expected patient trajectories and treatment outcomes under dynamic and time-varying treatment strategies, to accommodate CVSim datasets, and achieved benchmark metric to evaluate and demonstrate the model’s generalizability beyond MIMIC dataset. 
     * Conducted the experiments on a sequential Transformer framework for implementation on CVSim dataset, achieving a 10% improvement in individual-level RMSE for counterfactual predictions of patient’s outcomes under dynamic treatment.
-    * Evaluated and compared sequential deep learning framework performances across various architectures, using pretraining
+    * Evaluated and compared sequential deep learning framework performances across various architectures, using pre-training
 strategies, delayed prediction techniques, and padding adjustments, presenting results for optimal model selection.
     * Collaborated in writing and submitting the paper *Counterfactual Sepsis Outcome Prediction Under Dynamic and Time-
 Varying Treatment Regimes*, which was reviewed and accepted by AMIA 2024 Informatics Summit.
@@ -103,17 +102,17 @@ Service and leadership
 * President Assistant for 2022 Summit of Asian Society of Thoracic Surgeons (ASTS), 05/2022 – 07/2022
 * Student Advisor for Interdisciplinary Contest in Modeling, 02/2022 – 05/2022
 * Team Leader for Project-based Kaggle Competitions for Predicting Cancer-causing Genes / Growth Rate of YouTube Videos, 09/2020 – 12/2020
-* Teaching Fellow for BST 201 in 2023 Fall Semester at Harvard University (10 hours per week)
+* Teaching Fellow for BST (Biostatistics) 201 in 2023 Fall Semester at Harvard University (10 hours per week)
 * Teaching Fellow for BST 261 in 2024 Spring Semester at Harvard University (10 hours per week)
 
 Achievements
 ======
 * Biostatistics PhD Courses: BIOSTAT (Biostatistics) 234 (Completed), BST 230 (Completed), BST 232 (Completed), BST 231 (Planned)
-* Cum Laude from University of California, Los Angeles
-* Finalist, Top 1.5%, Interdisciplinary Contest in Modeling
-* Mathematical Association of America Award, Top 1%, Interdisciplinary Contest in Modeling
-* Silver Medal, Riiid! Answer Correctness Prediction (Featured Code Kaggle Competition), Top 3%
-* Silver Medal, Mechanism of Action (MoA) Prediction (Research Code Kaggle Competition), Top 2%
+* Cum Laude from University of California, Los Angeles, 06/2021 
+* Finalist, Top 1.5%, Interdisciplinary Contest in Modeling, 05/2022
+* Mathematical Association of America Award, Top 1%, Interdisciplinary Contest in Modeling, 05/2022
+* Silver Medal, Riiid! Answer Correctness Prediction (Featured Code Kaggle Competition), Top 3%, 01/2021
+* Silver Medal, Mechanism of Action (MoA) Prediction (Research Code Kaggle Competition), Top 2%, 11/2020
 * Dean's Honor List for Fall 2017, Fall 2018, Winter 2020, Spring 2020, Fall 2020, Winter 2021, Spring 2021
 
 
