@@ -54,7 +54,7 @@ Then, the Cox model results where interaction with continuous covariate Z modele
 
 * Addressed the complexities of mathematical expressions with more than three knots.
 * Developed a technique to convert complex expressions into executable R code using nested loops and iterative computations.
-* Further information is available at the [InteractionRCS GitHub Repository](https://github.com/gmelloni/interactionRCS).
+* Further information is available at the [interactionRCS GitHub Repository](https://github.com/gmelloni/interactionRCS).
 
 ### User-defined Knot Positions
 
