@@ -10,7 +10,7 @@ redirect_from:
 {% include base_path %}
 # Research Motivation
 
-For decades, researchers have used the log-rank test/Cox’s hazard ratio (HR) test/estimation approach as the standard primary analysis for clinical trials with time-to-event outcomes. Despite its common use, the HR does not provide robust, reliable, and clinically interpretable quantitative information about the risks and benefits of a new treatment. To address this, we recently developed "average hazard" (AH) --- a new summary measure of the event time distribution (Uno and Horiguchi, Statistics in Medicine 2023), which has great potential to change the traditional analytic practice and significantly improve the interpretation of the magnitude of treatment effect on time-to-event outcomes. We aim to make AH-based methods available in various clinical research settings. 
+For decades, researchers have used the log-rank test/Cox’s hazard ratio (HR) test/estimation approach as the standard primary analysis for clinical trials with time-to-event outcomes. Despite its common use, the HR does not provide robust, reliable, and clinically interpretable quantitative information about the risks and benefits of a new treatment. To address this, we recently developed "Average Hazard" (AH) --- a new summary measure of the event time distribution (Uno and Horiguchi, Statistics in Medicine 2023), which has great potential to change the traditional analytic practice and significantly improve the interpretation of the magnitude of treatment effect on time-to-event outcomes. We aim to make AH-based methods available in various clinical research settings. 
 
 # Research Context
 
@@ -30,10 +30,10 @@ The concept of Average Hazard with Survival Weight (AH-SW) serves as a summary m
 
 ![Flowchart](/images/AH_Flowchart_2.png)
 
-* We are interested in four metrics under different experimental scenarios: Group 0 Average Hazard (AH), Group 1 (AH), Difference in AH, and Difference in log(AH), which can also be interpreted as ratio of AH in log term.
-* We designed two event patterns: Whether exponential-based hazard model is correctly specified
-* We designed two covariate patterns under each event pattern: Whether certain covariates are generated through normal distribution
-* We designed five settings under each event and covariate pattern: Whether outcome and treatment model are correctly specified 
+* We are interested in four metrics under different experimental scenarios: Group 0 AH, Group 1 AH, Difference in AH, and Difference in log(AH), which can also be interpreted as ratio of AH in log term.
+* We designed two event patterns: Whether exponential-based hazard model is correctly specified.
+* We designed two covariate patterns under each event pattern: Whether certain covariates are generated through normal distribution.
+* We designed five settings under each event and covariate pattern: Whether outcome and treatment model are correctly specified. 
 
 # Research Contribution
 
@@ -44,12 +44,12 @@ The concept of Average Hazard with Survival Weight (AH-SW) serves as a summary m
 * Managed large computational workloads through distributed computing with parallel jobs on a cluster.
 * Gained proficiency in data transfer, code integration on the cluster, and batch script writing.
 * Self-learned the use of clusters, with a focus on the Kraken platform.
-* Debugged batch scripts using system logs, achieving cluster proficiency within two days.
+* Debugged batch scripts using system logs, achieving cluster proficiency.
 
 ### Data Generating Function Modification
 
-* Identified Confidence Interval Coverage issues post cluster computation experiments.
-* Reexamined the data-generating function to correct mathematical derivations.
+* Identified Confidence Interval Coverage issues following cluster computation experiments.
+* Re-examined the data-generating function to correct mathematical derivations.
 * Addressed overlooked probabilistic correlations among variables.
 * Adjusted variable generation from standard normal to beta distribution with IPTW to mitigate overlap issues in propensity score distributions.
 * Collaborated in refining experimental scenarios to enhance data accuracy.
