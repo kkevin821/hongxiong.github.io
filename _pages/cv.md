@@ -14,7 +14,7 @@ Education
 * B.A.in Economics / B.S.in Statistics / Minor in Mathematics in University of California, Los Angeles, 2021
 * M.S. in Biostatistics, Harvard University, 2024
 
-Research Experience
+Research Experiences
 ======
 * 09/2023 - Present: Research Assistant
   * Dana-Farber Cancer Institute, Harvard Medical School, Boston, Massachusetts, United States
@@ -97,7 +97,7 @@ Coursera Certificates
 * Biology Everywhere (University of Colorado Boulder)
 * Introductory Human Physiology (Duke University)
 
-Service and leadership
+Service and Leadership
 ======
 * President Assistant for 2022 Summit of Asian Society of Thoracic Surgeons (ASTS), 05/2022 – 07/2022
 * Student Advisor for Interdisciplinary Contest in Modeling, 02/2022 – 05/2022
