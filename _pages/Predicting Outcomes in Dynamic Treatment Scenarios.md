@@ -1,6 +1,6 @@
 ---
 layout: archive
-title: "Outcome Prediction under Dynamic and Time-Varying Treatment Regimes"
+title: "Patient Outcome Prediction under Dynamic and Time-Varying Treatment Regimes"
 permalink: /Outcome_Predictions/
 author_profile: true
 redirect_from:
