@@ -35,16 +35,23 @@ similarity score rankings, utilizing a pre-trained CoCa image encoder to create 
 
 ## Building Search Base through Unsupervised Machine Learning Techniques
 
-As the foundational step in building search model, data preprocessing was necessary to sample patches from each WSI based on unsupervised machine learning techniques to build the search base. Due to high inter-dependencies between packages, the original lab code for sampling was error prone. After delving into the underlying logic of this code, I rewrote the sampling script from scratch, successfully procuring the samples needed with K-means Clustering for an arbitrary number of clusters and patches.
+* Initiated the search model creation by preprocessing data to sample patches from WSIs using unsupervised learning.
+* Tackled the high inter-dependency errors in the original lab sampling code.
+* Rewrote the sampling script to improve reliability, utilizing K-means Clustering for variable cluster and patch numbers.
 
 ## Constructing Multimodal Search Model Architecture 
 
-I integrated a CoCa image encoder alongside a text encoder to generate corresponding embeddings, establishing a robust architecture for our search model. Initially, my code's inefficiency led to frequent GPU memory crashes. Under guidance from professor, I refined the code, introducing a save frequency to periodically log embedding results into an h5 file and associated slide information into a pickle file, minimizing runtime memory usage 
+* Integrated a CoCa image encoder with a text encoder to produce corresponding embeddings, enhancing the search model's architecture.
+* Addressed the initial inefficiencies causing GPU memory overloads.
+* Optimized the code based on professorial guidance by:
+  * Implementing a save frequency for embeddings into an h5 file.
+  * Logging slide information into a pickle file to reduce memory usage during runtime. 
 
 ## Establishing Ranking System to Retrieve Top-Similar Patches
 
-I implemented a ranking system that precisely matches WSI patches to captions based on dot similarity scores from statistical computation, enabling us to identify and retrieve the most relevant patches accurately. This application of deep learning techniques expanded my former biostatistical research and gave me a deeper understanding of the significant transformation artificial intelligence brings to healthcare.
-
+* Developed a ranking system that accurately aligns WSI patches with captions using dot similarity scores.
+* Facilitated precise identification and retrieval of relevant patches.
+* Broadened my biostatistical research to include deep learning applications, recognizing AI's transformative potential in healthcare.
 
 # Research Presentation
 
