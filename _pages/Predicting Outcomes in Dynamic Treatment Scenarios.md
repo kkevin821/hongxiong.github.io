@@ -27,7 +27,7 @@ We've approached the analysis of covariate distributions by dividing the data in
 •	Megan Su*, Stephanie Hu*, Hong Xiong*, Amelia Hu, Elias Baedorf Kassis, Zach Shahn, Li-wei Lehman. *Counterfactual Sepsis Outcome Prediction Under Dynamic and Time-Varying Treatment Regimes*. In AMIA 2024 Informatics Summit. [Regular Paper] [Accepted].                                           
                                   (* Indicates co-first authorship)
 
-• Ongoing paper about Transformer and GPT Architecture in Outcome Prediction under Dynamic and Time-Varying Treatment Regimes
+• Ongoing paper about Transformer and GPT Architecture in Outcome Prediction under Dynamic and Time-Varying Treatment Regimes.
 
 # Research Contribution
 
@@ -51,9 +51,9 @@ We've approached the analysis of covariate distributions by dividing the data in
 * Reworked the model to ensure full historical timeline consideration in predictions.
 * Achieved successful application of the sequential LSTM framework to the CVSim dataset.
 
-## Applications of Natural Language Processing (NLP) Techniques in Time-Series Counterfactual Predictions on Patient's Outcomes
+## Applications of Natural Language Processing (NLP) Techniques in Time-Series Counterfactual Predictions on Patient Outcomes
 
-* Implemented a sequential Transformer framework, termed "two variable per box" Transformer, for the CVSim dataset.
+* Implemented a sequential Transformer and GPT framework, termed "two variable per box" Transformer and GPT, for the CVSim dataset.
 * Attained counterfactual predictions with lower individual-level RMSE than the "two variable per box" LSTM.
 * Demonstrated the effective cross-disciplinary application of NLP techniques in time-series analysis.
 * Emphasized the importance of model adaptability across databases for enhancing medical treatment strategies and patient outcomes.
