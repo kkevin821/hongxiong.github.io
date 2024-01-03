@@ -10,21 +10,21 @@ redirect_from:
 {% include base_path %}
 # Research Motivation
 
-Statistical interpretations in regression models often encounter intricate interactions with continuous covariates when modeled by restricted cubic splines. The interactionRCS R package, first developed in 2022, provides a refined tool to decode such complexities and facilitate interpretation of model results, with a limitation of up to three knots. Our ongoing research aims for a more adaptable package, capable of embracing a multitude of spline techniques and accommodating varying regression model, ensuring the package's adaptability to any knot configuration. This initiative is part of a broader exploration at the TIMI Study Group, Harvard Medical School, intersecting the domains of applied clinical research and advanced statistical methodologies.
+Statistical interpretations in regression models often encounter intricate interactions with continuous covariates when modeled by restricted cubic splines. The interactionRCS R package, first developed in 2022, provides a refined tool to decode such complexities and facilitate interpretation of model results, with a limitation of up to 3 knots. Our ongoing research aims for a more adaptable package, capable of embracing a multitude of spline techniques and accommodating varying regression model, ensuring the package's adaptability to any knot configuration. This initiative is part of a broader exploration at the TIMI Study Group, Harvard Medical School, intersecting the domains of applied clinical research and advanced statistical methodologies.
 
 # Research Output
 
 Features from initial version of interactionRCS Package:
-* Support for various regression models (linear, logistic, Cox) up to three knots. 
-* Support for confidence interval calculation under delta and bootstrapping methods up to three knots.
-* Support user-defined knot positions up to three knots.
+* Support for various regression models (linear, logistic, Cox) up to 3 knots. 
+* Support for confidence interval calculation under delta and bootstrapping methods up to 3 knots.
+* Support user-defined knot positions up to 3 knots.
 
 Features added to final version of interactionRCS Package:
 * Flexibility to handle any number of knots.
 * Flexibility in the order of inputting regression formula for any number of knots.
-* Support for various regression models (linear, logistic, Cox) when number of knots exceeds three.
-* Support for confidence interval calculation under delta and bootstrapping methods when number of knots exceeds three.
-* Support user-defined knot positions when number of knots exceeds three.
+* Support for various regression models (linear, logistic, Cox) with more than 3 knots.
+* Support for confidence interval calculation under delta and bootstrapping methods with more than 3 knots.
+* Support user-defined knot positions with more than 3 knots.
 
 CRAN Package: [interactionRCS](https://cran.r-project.org/web/packages/interactionRCS/index.html)
 
@@ -52,19 +52,19 @@ Then, the Cox model results where interaction with continuous covariate Z modele
 
 ### Complex Mathematical Modeling
 
-* Addressed the complexities of mathematical expressions with more than three knots.
+* Addressed the complexities of mathematical expressions with more than 3 knots.
 * Developed a technique to convert complex expressions into executable R code using nested loops and iterative computations.
 * Further information is available at the [interactionRCS GitHub Repository](https://github.com/gmelloni/interactionRCS).
 
 ### User-defined Knot Positions
 
-* Implemented custom knot location functionality for when the number of knots exceeds three.
+* Implemented custom knot location functionality for with more than 3 knots.
 * Utilized regular expressions, leveraging Python skills, to interpret user-input equations and implemented the logic in R.
 * Conducted analyses based on whether knot locations were user-defined or automatically set.
 
 ### Confidence Interval Calculation under Delta and Bootstrapping Method
 
-* Tackled the complexity of confidence interval calculations when the knot count surpasses three.
+* Tackled the complexity of confidence interval calculations with more than 3 knots.
 * Extended the existing package's logic to accommodate an arbitrary number of knots.
 * Employed global variable settings and iterative computations to facilitate the extended functionality.
 
@@ -72,7 +72,7 @@ Then, the Cox model results where interaction with continuous covariate Z modele
 
 * Compiled a detailed report evaluating the package’s performance across:
   * Different regression model types: linear, logistic, Cox.
-  * A range of knot numbers: from three to six.
+  * A range of knot numbers: from 3 to 6.
   * Various knot configurations: both preset and user-defined.
   * Multiple datasets, such as umaru.
 * Conducted tests using both delta and bootstrapping methods to verify the package's accuracy and reliability.
