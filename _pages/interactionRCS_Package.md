@@ -26,9 +26,9 @@ Features added to final version of interactionRCS Package:
 * Support for confidence interval calculation under delta and bootstrapping methods when number of knots exceeds three.
 * Support user-defined knot positions when number of knots exceeds three.
 
-CRAN Package: [InteractionRCS](https://cran.r-project.org/web/packages/interactionRCS/index.html)
+CRAN Package: [interactionRCS](https://cran.r-project.org/web/packages/interactionRCS/index.html)
 
-GitHub Repository: [InteractionRCS](https://github.com/gmelloni/interactionRCS)
+GitHub Repository: [interactionRCS](https://github.com/gmelloni/interactionRCS)
 
 # Research Context
 
