@@ -39,7 +39,7 @@ Research Experience
     * Evaluated and compared sequential deep learning framework performances across various architectures, using pretraining
 strategies, delayed prediction techniques, and padding adjustments, presenting results for optimal model selection.
     * Collaborated in writing and submitting the paper *Counterfactual Sepsis Outcome Prediction Under Dynamic and Time-
-Varying Treatment Regimes* to AMIA 2024 for review.
+Varying Treatment Regimes*, which was reviewed and accepted by AMIA 2024 Informatics Summit.
   * Supervisor: Dr. Li-wei H. Lehman, Massachusetts Institute of Technology  
 
 * 02/2023 – 08/2023: Research Assistant
@@ -91,5 +91,5 @@ Service and leadership
 * Student Advisor for Interdisciplinary Contest in Modeling, 02/2022 – 05/2022
 * Team Leader for Project-based Kaggle Competitions for Predicting Cancer-causing Genes / Growth Rate of YouTube Videos, 09/2020 – 12/2020
 * Teaching Fellow for BST 201 in 2023 Fall Semester at Harvard University (10 hours per week)
-* Teaching Fellow for BST 261 in 2024 Spring Semester at Harvard University
+* Teaching Fellow for BST 261 in 2024 Spring Semester at Harvard University (10 hours per week)
 
