@@ -65,7 +65,7 @@ The concept of Average Hazard with Survival Weight (AH-SW) serves as a summary m
 
 Based on theorems proposed by Wei Guanghui (2008) regarding [Semiparametric methods for estimating cumulative treatment effects in the presence of non-proportional hazards and dependent censoring](https://www.semanticscholar.org/paper/Semiparametric-methods-for-estimating-cumulative-in-Wei/14e91a87507e83d47f33cd38ea518d7c63137b26) to derive analytical varaince upon ratio of cumulative hazards and difference in RMST, we followed the mathematical logic to derive analytical variance of RAH-SW and DAH-SW under IPTW. 
 
-Based on work by Zhang, M., & Schaubel, D. E. (2012) regarding [Contrasting treatment-specific survival using double-robust estimators](https://doi.org/10.1002/sim.5511) about asymptotic distributions for Average Causal Effect (ACE) with respect to RMST, we followed the logic to derive analytical variance of RAH-SW and DAH-SW under AIPTW. 
+Based on work by Zhang, M., & Schaubel, D. E. (2012) regarding [Contrasting treatment-specific survival using double-robust estimators](https://doi.org/10.1002/sim.5511) about asymptotic distributions for Average Causal Effect (ACE) with respect to RMST, we followed the mathematical logic to derive analytical variance of RAH-SW and DAH-SW under AIPTW. 
 
 # Research Presentation
 
