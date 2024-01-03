@@ -85,6 +85,19 @@ Skills
 * Java
 * SQL
 
+Coursera Certificates
+======
+* Python 3 Programming (University of Michigan)
+* Applied Data Science with Python (University of Michigan)
+* IBM Data Science (IBM)
+* IBM Data Engineering (IBM)
+* Natural Language Processing (Deep Learning.AI)
+* Deep Learning (Deep Learning.AI)
+* Fundamentals of Immunology (Rice University)
+* Introduction to the Biology of Cancer (Johns Hopkins University)
+* Biology Everywhere (University of Colorado Boulder)
+* Introductory Human Physiology (Duke University)
+
 Service and leadership
 ======
 * President Assistant for 2022 Summit of Asian Society of Thoracic Surgeons (ASTS), 05/2022 – 07/2022
@@ -92,4 +105,16 @@ Service and leadership
 * Team Leader for Project-based Kaggle Competitions for Predicting Cancer-causing Genes / Growth Rate of YouTube Videos, 09/2020 – 12/2020
 * Teaching Fellow for BST 201 in 2023 Fall Semester at Harvard University (10 hours per week)
 * Teaching Fellow for BST 261 in 2024 Spring Semester at Harvard University (10 hours per week)
+
+Achievements
+======
+* Biostatistics PhD Courses: BIOSTAT (Biostatistics) 234 (Completed), BST 230 (Completed), BST 232 (Completed), BST 231 (Planned)
+* Cum Laude from University of California, Los Angeles
+* Finalist, Top 1.5%, Interdisciplinary Contest in Modeling
+* Mathematical Association of America Award, Top 1%, Interdisciplinary Contest in Modeling
+* Silver Medal, Riiid! Answer Correctness Prediction (Featured Code Kaggle Competition), Top 3%
+* Silver Medal, Mechanism of Action (MoA) Prediction (Research Code Kaggle Competition), Top 2%
+* Dean's Honor List for Fall 2017, Fall 2018, Winter 2020, Spring 2020, Fall 2020, Winter 2021, Spring 2021
+
+
 
