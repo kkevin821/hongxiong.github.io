@@ -56,7 +56,7 @@ The concept of Average Hazard with Survival Weight (AH-SW) serves as a summary m
 
 ### Strategic Simulations
 
-* Tackled matrix calculation errors in bootstrapped samples using AIPTW method simulations.
+* Tackled matrix calculation errors in bootstrapped samples when using AIPTW method simulations.
 * Identified error occurrence in a minimal number of bootstrapping cases, likely due to sample instability.
 * Proposed and implemented a strategy to reduce iterations per job and increase the total number of jobs.
 * This approach minimized the impact of errors, ensured sufficient iterations, and maintained the continuity and robustness of simulation experiments.
