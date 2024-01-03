@@ -16,7 +16,7 @@ The ability to quickly and accurately retrieve histological patterns from a vast
 
 # Research Context
 
-My prior advanced coursework at Harvard's School of Engineering on computer vision and NLP, coupled with a project applying transfer learning with VGG16 to classify patient brain CT tumor types with 95% accuracy, laid the groundwork for this research. However, the complexity of the data escalated as we dealt with WSI in pathology, demanding proficient feature extraction via computer vision neural networks.
+My prior advanced coursework at Harvard's School of Engineering on Computer Vision and Natural Language Processing, coupled with a project applying transfer learning with VGG16 to classify patient brain CT tumor types with 95% accuracy, laid the groundwork for this research. However, the complexity of the data escalated as we dealt with WSI in pathology, demanding proficient feature extraction via computer vision neural networks.
 
 We continued our study based on Contrastive Captioners (CoCa) architecture proposed by Yu, J., Wang, Z., Vasudevan, V., Yeung, L., Seyedhosseini, M., & Wu, Y. (2022) regarding [CoCa: Contrastive Captioners are Image-Text Foundation Models](https://arxiv.org/abs/2205.01917):
 
