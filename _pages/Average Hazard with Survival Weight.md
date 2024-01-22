@@ -32,7 +32,7 @@ The concept of Average Hazard with Survival Weight (AH-SW) serves as a summary m
 
 * We are interested in 4 metrics under different experimental scenarios: Group 0 AH, Group 1 AH, Difference in AH, and Difference in log(AH), which can also be interpreted as ratio of AH in log term.
 * We designed 2 event patterns: Different specifications of exponential-based hazard model.
-* We designed 2 censoring patterns under each event pattern: Different generating mechanism of censoring time.
+* We designed 2 censoring patterns under each event pattern: Different generating mechanisms of censoring time.
 * We designed 5 settings under each event and covariate pattern: Whether outcome and treatment model are correctly specified. 
 
 # Research Contribution
